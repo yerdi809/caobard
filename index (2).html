@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CaobaRD — Muebles Personalizados en Madera | República Dominicana</title>
+
+  <!-- SEO -->
+  <meta name="description" content="CaobaRD — Muebles personalizados en madera en toda la República Dominicana. Caoba, cedro, roble y más. Trae tu idea y la fabricamos. Servicio nacional.">
+  <meta name="keywords" content="muebles personalizados madera República Dominicana, cocinas a medida RD, armarios madera Santo Domingo, caoba, cedro, Santiago, Punta Cana, La Romana, Puerto Plata">
+  <link rel="canonical" href="https://caobard.com/index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CaobaRD — Muebles Personalizados en Madera | Toda República Dominicana">
+  <meta property="og:description" content="Trae tu idea de Pinterest y la fabricamos con las mejores maderas. Servicio en toda República Dominicana.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caobard.com">
+
+  <!-- Schema.org LocalBusiness: negocio con base en Santiago y servicio en todo el país -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "CaobaRD",
+    "description": "Muebles personalizados en madera premium con servicio en toda la República Dominicana",
+    "url": "https://caobard.com",
+    "telephone": "+18091234567",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santiago de los Caballeros",
+      "addressRegion": "Santiago",
+      "addressCountry": "DO"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "República Dominicana"
+    },
+    "priceRange": "$$-$$$$"
+  }
+  </script>
+
+  <!-- Google Analytics — REEMPLAZA G-XXXXXXXXXX con tu tag real de Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Playfair Display (títulos) + Inter (cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Configuración Tailwind + estilos personalizados -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            caoba:   '#8B4513',
+            cedro:   '#A0522D',
+            saman:   '#C4A882',
+            crema:   '#FAF7F2',
+            tinta:   '#1C1008',
+            dorado:  '#C9A84C',
+            'caoba-dark': '#5C2E0C',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #FAF7F2;
+      color: #1C1008;
+      font-family: 'Inter', sans-serif;
+      /* Textura sutil de grano para calidez */
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(139,69,19,0.035) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+    /* Animaciones de entrada */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes slowZoom {
+      from { transform: scale(1.08); }
+      to   { transform: scale(1); }
+    }
+    .fade-up    { animation: fadeUp 1s cubic-bezier(.22,1,.36,1) both; }
+    .fade-in    { animation: fadeIn 1.4s ease both; }
+    .slow-zoom  { animation: slowZoom 8s ease-out both; }
+    .delay-1 { animation-delay: .15s; }
+    .delay-2 { animation-delay: .3s; }
+    .delay-3 { animation-delay: .45s; }
+    .delay-4 { animation-delay: .6s; }
+
+    /* Reveal al hacer scroll */
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity .9s ease, transform .9s cubic-bezier(.22,1,.36,1); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    /* Link de navegación activo */
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: '';
+      position: absolute; left: 0; bottom: -6px;
+      width: 0; height: 2px; background: #8B4513;
+      transition: width .3s ease;
+    }
+    .nav-link:hover::after { width: 100%; }
+    .nav-link.active::after { width: 100%; }
+
+    /* Botón CTA principal */
+    .btn-caoba {
+      background: #8B4513;
+      color: #FAF7F2;
+      transition: all .3s ease;
+      box-shadow: 0 4px 14px rgba(139,69,19,.25);
+    }
+    .btn-caoba:hover {
+      background: #5C2E0C;
+      box-shadow: 0 10px 30px rgba(139,69,19,.45);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      border: 1.5px solid #FAF7F2;
+      color: #FAF7F2;
+      background: transparent;
+      transition: all .3s ease;
+    }
+    .btn-outline:hover {
+      background: #FAF7F2;
+      color: #1C1008;
+      transform: translateY(-2px);
+    }
+
+    /* Hero overlay con vignette */
+    .hero-overlay {
+      background:
+        linear-gradient(180deg, rgba(28,16,8,.35) 0%, rgba(28,16,8,.55) 60%, rgba(28,16,8,.85) 100%);
+    }
+
+    /* WhatsApp flotante pulse */
+    @keyframes pulseRing {
+      0%   { box-shadow: 0 0 0 0 rgba(37,211,102,.55); }
+      70%  { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+    .wa-float { animation: pulseRing 2s infinite; }
+
+    /* Tarjeta de servicio hover */
+    .service-card img { transition: transform .7s cubic-bezier(.22,1,.36,1); }
+    .service-card:hover img { transform: scale(1.06); }
+    .service-card .overlay { transition: opacity .4s ease; }
+
+    /* Línea decorativa con diamante */
+    .divider-diamond {
+      display: flex; align-items: center; gap: 1rem;
+      color: #C9A84C;
+    }
+    .divider-diamond::before,
+    .divider-diamond::after {
+      content: ''; flex: 1; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,.6), transparent);
+    }
+
+    /* Proceso número grande */
+    .step-number {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 5rem;
+      line-height: 1;
+      color: #8B4513;
+      opacity: .18;
+      position: absolute;
+      top: -.5rem; left: -.25rem;
+      pointer-events: none;
+    }
+
+    /* Menú móvil */
+    .mobile-menu { transform: translateX(100%); transition: transform .4s cubic-bezier(.22,1,.36,1); }
+    .mobile-menu.open { transform: translateX(0); }
+
+    /* Scroll suave del reveal observer */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <!-- ============================================= -->
+  <!-- NAVEGACIÓN SUPERIOR FIJA                       -->
+  <!-- ============================================= -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-crema/90 border-b border-caoba/10 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 group">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="transition-transform group-hover:rotate-6">
+          <path d="M16 3 L28 10 L28 22 L16 29 L4 22 L4 10 Z" stroke="#8B4513" stroke-width="1.5" fill="#C9A84C" fill-opacity=".15"/>
+          <path d="M16 3 L16 29 M4 10 L28 22 M28 10 L4 22" stroke="#8B4513" stroke-width="1"/>
+        </svg>
+        <span class="font-display text-2xl font-bold tracking-tight text-tinta">
+          Caoba<span class="text-caoba">RD</span>
+        </span>
+      </a>
+
+      <!-- Menú desktop -->
+      <ul class="hidden lg:flex items-center gap-9 text-sm font-medium text-tinta/80">
+        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+        <li><a href="muebles.html" class="nav-link">Muebles a Medida</a></li>
+        <li><a href="cocinas-banos.html" class="nav-link">Cocinas y Baños</a></li>
+        <li><a href="puertas-armarios.html" class="nav-link">Puertas y Armarios</a></li>
+        <li><a href="maderas.html" class="nav-link">Maderas</a></li>
+        <li><a href="portafolio.html" class="nav-link">Portafolio</a></li>
+        <li><a href="inspiracion.html" class="nav-link">Inspiración</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <!-- CTA desktop -->
+      <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20solicitar%20un%20presupuesto"
+         target="_blank"
+         class="hidden lg:inline-flex btn-caoba px-5 py-2.5 rounded-full text-sm font-semibold items-center gap-2">
+        Solicitar Presupuesto
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <!-- Botón hamburguesa móvil -->
+      <button id="menuToggle" class="lg:hidden p-2 text-tinta" aria-label="Abrir menú">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Menú móvil slide-in -->
+    <div id="mobileMenu" class="mobile-menu lg:hidden fixed inset-y-0 right-0 w-80 max-w-[85vw] bg-crema shadow-2xl z-50 p-8 flex flex-col">
+      <button id="menuClose" class="self-end p-2 text-tinta mb-8" aria-label="Cerrar menú">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M6 18L18 6"/></svg>
+      </button>
+      <ul class="flex flex-col gap-5 text-lg font-display text-tinta">
+        <li><a href="index.html" class="block py-1 border-b border-caoba/10">Inicio</a></li>
+        <li><a href="muebles.html" class="block py-1 border-b border-caoba/10">Muebles a Medida</a></li>
+        <li><a href="cocinas-banos.html" class="block py-1 border-b border-caoba/10">Cocinas y Baños</a></li>
+        <li><a href="puertas-armarios.html" class="block py-1 border-b border-caoba/10">Puertas y Armarios</a></li>
+        <li><a href="maderas.html" class="block py-1 border-b border-caoba/10">Maderas</a></li>
+        <li><a href="portafolio.html" class="block py-1 border-b border-caoba/10">Portafolio</a></li>
+        <li><a href="inspiracion.html" class="block py-1 border-b border-caoba/10">Inspiración</a></li>
+        <li><a href="contacto.html" class="block py-1 border-b border-caoba/10">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/18091234567" target="_blank" class="btn-caoba mt-8 px-5 py-3 rounded-full text-center font-semibold">
+        Solicitar Presupuesto
+      </a>
+    </div>
+  </header>
+
+  <!-- ============================================= -->
+  <!-- 1. HERO                                       -->
+  <!-- ============================================= -->
+  <section class="relative h-[92vh] min-h-[640px] overflow-hidden">
+    <!-- Imagen de fondo -->
+    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1920&q=80"
+         alt="Mueble de madera premium CaobaRD"
+         class="absolute inset-0 w-full h-full object-cover slow-zoom">
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 h-full flex flex-col justify-center">
+      <!-- Badge superior -->
+      <div class="fade-up inline-flex items-center gap-3 mb-6 w-fit">
+        <span class="w-10 h-px bg-dorado"></span>
+        <span class="text-dorado text-xs tracking-[.3em] uppercase font-medium">Hecho en República Dominicana 🇩🇴</span>
+      </div>
+
+      <h1 class="fade-up delay-1 font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-crema leading-[1.05] max-w-4xl">
+        Muebles Personalizados<br>
+        <span class="italic text-dorado">en Madera</span><span class="text-crema"> —</span><br>
+        <span class="text-3xl sm:text-4xl lg:text-5xl font-normal italic text-crema/90">trae tu idea, la hacemos realidad.</span>
+      </h1>
+
+      <p class="fade-up delay-2 mt-8 text-lg lg:text-xl text-crema/80 max-w-2xl leading-relaxed">
+        Diseño a medida con las maderas más nobles del Caribe. Del pin de Pinterest a tu casa — servicio en <span class="text-dorado font-medium">toda la República Dominicana</span>.
+      </p>
+
+      <div class="fade-up delay-3 mt-10 flex flex-col sm:flex-row gap-4">
+        <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20solicitar%20un%20presupuesto%20gratis"
+           target="_blank"
+           class="btn-caoba px-8 py-4 rounded-full font-semibold text-base inline-flex items-center justify-center gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar Presupuesto Gratis
+        </a>
+        <a href="portafolio.html" class="btn-outline px-8 py-4 rounded-full font-semibold text-base inline-flex items-center justify-center gap-3">
+          Ver Portafolio
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="fade-in delay-4 absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-crema/60">
+        <span class="text-[10px] tracking-[.3em] uppercase">Descubre más</span>
+        <svg width="14" height="24" viewBox="0 0 14 24" fill="none" stroke="currentColor" stroke-width="1.5" class="animate-bounce">
+          <path d="M7 3v18M1 15l6 6 6-6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video hero debajo -->
+  <section class="bg-tinta py-16 lg:py-20">
+    <div class="max-w-5xl mx-auto px-6 lg:px-10 reveal">
+      <div class="divider-diamond mb-6">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="#C9A84C"><rect x="5" y="0" width="5" height="5" transform="rotate(45 5 5)"/></svg>
+      </div>
+      <h2 class="font-display text-3xl lg:text-4xl text-center text-crema mb-3">Conoce CaobaRD</h2>
+      <p class="text-center text-crema/60 mb-10 max-w-xl mx-auto">Un vistazo a nuestro taller, proceso y la pasión por la madera noble dominicana.</p>
+      <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl border border-dorado/20">
+        <!-- REEMPLAZA VIDEO_ID_AQUI con el ID de tu video de YouTube (los caracteres después de ?v= en la URL) -->
+        <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_AQUI?rel=0&modestbranding=1"
+          width="100%" height="100%" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen loading="lazy"
+          title="CaobaRD — Video de presentación">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 2. QUIÉNES SOMOS                              -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-crema">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+      <!-- Texto -->
+      <div class="reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-caoba"></span>
+          <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Quiénes Somos</span>
+        </div>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold text-tinta leading-tight mb-6">
+          Tu idea, nuestra madera,<br>
+          <span class="italic text-caoba">en cualquier rincón del país.</span>
+        </h2>
+        <p class="text-tinta/75 text-lg leading-relaxed mb-5">
+          CaobaRD nace de una obsesión simple: que encargar un mueble a medida en República Dominicana sea tan fácil como guardar un pin. Tú traes la idea — de Pinterest, una foto, un boceto — y nosotros la convertimos en una pieza real de caoba, cedro o saman.
+        </p>
+        <p class="text-tinta/75 text-lg leading-relaxed mb-5">
+          Somos el puente entre tu visión y los mejores ebanistas del país. Tú hablas con una sola persona. Nosotros cuidamos cada detalle: diseño, madera, fabricación, entrega.
+        </p>
+        <p class="text-tinta/75 text-lg leading-relaxed mb-8">
+          <span class="font-semibold text-caoba">¿Estás en Santo Domingo, Punta Cana, Barahona o Puerto Plata?</span> No importa dónde vivas — coordinamos con talleres de confianza en tu zona para llevarte la misma calidad premium, sin importar la distancia.
+        </p>
+        <div class="grid grid-cols-3 gap-6 pt-6 border-t border-caoba/15">
+          <div>
+            <div class="font-display text-4xl font-bold text-caoba">100%</div>
+            <div class="text-xs uppercase tracking-wider text-tinta/60 mt-1">A medida</div>
+          </div>
+          <div>
+            <div class="font-display text-4xl font-bold text-caoba">🇩🇴</div>
+            <div class="text-xs uppercase tracking-wider text-tinta/60 mt-1">Todo el país</div>
+          </div>
+          <div>
+            <div class="font-display text-4xl font-bold text-caoba">1</div>
+            <div class="text-xs uppercase tracking-wider text-tinta/60 mt-1">Interlocutor</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mapa estilizado de RD con cobertura nacional -->
+      <div class="reveal relative">
+        <div class="absolute -top-4 -left-4 w-full h-full border-2 border-caoba/30 rounded-2xl"></div>
+        <div class="relative bg-gradient-to-br from-crema to-saman/20 rounded-2xl overflow-hidden shadow-2xl p-8 lg:p-10 aspect-[4/5] flex flex-col">
+          <!-- Header del mapa -->
+          <div class="mb-4">
+            <div class="text-[10px] tracking-[.3em] uppercase text-caoba font-semibold mb-2">Cobertura Nacional</div>
+            <h3 class="font-display text-2xl font-bold text-tinta leading-tight">Servimos toda<br>República Dominicana 🇩🇴</h3>
+          </div>
+
+          <!-- SVG Mapa de RD estilizado -->
+          <div class="flex-1 flex items-center justify-center">
+            <svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+              <defs>
+                <radialGradient id="mapGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+                </radialGradient>
+                <filter id="pinShadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#8B4513" flood-opacity="0.3"/>
+                </filter>
+              </defs>
+
+              <!-- Glow de fondo -->
+              <ellipse cx="250" cy="160" rx="240" ry="140" fill="url(#mapGlow)"/>
+
+              <!-- Silueta estilizada de República Dominicana -->
+              <!-- Aproximación artística del contorno de RD -->
+              <path d="M 60 180
+                       Q 55 155, 75 140
+                       Q 90 125, 115 125
+                       Q 140 110, 165 115
+                       Q 195 105, 220 115
+                       Q 250 105, 280 110
+                       Q 310 100, 340 108
+                       Q 370 100, 400 115
+                       Q 425 120, 440 140
+                       Q 455 160, 445 185
+                       Q 440 205, 420 215
+                       Q 395 225, 370 220
+                       Q 340 230, 310 220
+                       Q 285 230, 260 220
+                       Q 235 228, 210 218
+                       Q 180 225, 155 215
+                       Q 130 222, 105 210
+                       Q 80 205, 65 195 Z"
+                    fill="#8B4513"
+                    fill-opacity="0.12"
+                    stroke="#8B4513"
+                    stroke-width="2"
+                    stroke-linejoin="round"/>
+
+              <!-- Línea punteada de frontera con Haití (oeste) -->
+              <path d="M 75 140 Q 70 170, 80 200"
+                    fill="none"
+                    stroke="#8B4513"
+                    stroke-width="1.5"
+                    stroke-dasharray="3,4"
+                    opacity="0.4"/>
+
+              <!-- Puntos de ciudades (pins animados) -->
+              <!-- Santiago (base de operaciones) -->
+              <g filter="url(#pinShadow)">
+                <circle cx="200" cy="150" r="10" fill="#8B4513">
+                  <animate attributeName="r" values="10;13;10" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="200" cy="150" r="5" fill="#C9A84C"/>
+                <text x="200" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1C1008">Santiago</text>
+                <text x="200" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#8B4513" font-weight="600">★ BASE</text>
+              </g>
+
+              <!-- Santo Domingo -->
+              <g filter="url(#pinShadow)">
+                <circle cx="275" cy="215" r="7" fill="#8B4513" fill-opacity="0.85"/>
+                <circle cx="275" cy="215" r="3" fill="#C9A84C"/>
+                <text x="275" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#1C1008">Santo Domingo</text>
+              </g>
+
+              <!-- Puerto Plata (norte) -->
+              <g filter="url(#pinShadow)">
+                <circle cx="180" cy="125" r="6" fill="#8B4513" fill-opacity="0.85"/>
+                <circle cx="180" cy="125" r="2.5" fill="#C9A84C"/>
+                <text x="180" y="112" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">Puerto Plata</text>
+              </g>
+
+              <!-- Punta Cana (este) -->
+              <g filter="url(#pinShadow)">
+                <circle cx="405" cy="175" r="6" fill="#8B4513" fill-opacity="0.85"/>
+                <circle cx="405" cy="175" r="2.5" fill="#C9A84C"/>
+                <text x="405" y="162" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">Punta Cana</text>
+              </g>
+
+              <!-- La Romana (sureste) -->
+              <g filter="url(#pinShadow)">
+                <circle cx="355" cy="210" r="6" fill="#8B4513" fill-opacity="0.85"/>
+                <circle cx="355" cy="210" r="2.5" fill="#C9A84C"/>
+                <text x="355" y="228" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">La Romana</text>
+              </g>
+
+              <!-- Barahona (suroeste) -->
+              <g filter="url(#pinShadow)">
+                <circle cx="135" cy="215" r="6" fill="#8B4513" fill-opacity="0.85"/>
+                <circle cx="135" cy="215" r="2.5" fill="#C9A84C"/>
+                <text x="135" y="233" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">Barahona</text>
+              </g>
+
+              <!-- La Vega (centro) -->
+              <g filter="url(#pinShadow)">
+                <circle cx="230" cy="175" r="5" fill="#8B4513" fill-opacity="0.75"/>
+                <circle cx="230" cy="175" r="2" fill="#C9A84C"/>
+                <text x="245" y="180" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">La Vega</text>
+              </g>
+
+              <!-- Líneas de conexión sutil desde Santiago (base) a otras ciudades -->
+              <g stroke="#8B4513" stroke-width="1" stroke-dasharray="2,3" opacity="0.25" fill="none">
+                <line x1="200" y1="150" x2="275" y2="215"/>
+                <line x1="200" y1="150" x2="180" y2="125"/>
+                <line x1="200" y1="150" x2="405" y2="175"/>
+                <line x1="200" y1="150" x2="355" y2="210"/>
+                <line x1="200" y1="150" x2="135" y2="215"/>
+                <line x1="200" y1="150" x2="230" y2="175"/>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Footer del mapa -->
+          <div class="mt-4 pt-4 border-t border-caoba/15 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2 text-tinta/70">
+              <span class="w-2.5 h-2.5 rounded-full bg-caoba"></span>
+              <span>Base: Santiago</span>
+            </div>
+            <div class="flex items-center gap-2 text-tinta/70">
+              <span class="w-2 h-2 rounded-full bg-caoba/70"></span>
+              <span>Servicio nacional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 3. CÓMO TRABAJAMOS                            -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-gradient-to-b from-crema to-saman/20 relative overflow-hidden">
+    <!-- Decoración sutil -->
+    <div class="absolute top-20 right-10 w-64 h-64 rounded-full bg-caoba/5 blur-3xl"></div>
+    <div class="absolute bottom-20 left-10 w-80 h-80 rounded-full bg-dorado/10 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-caoba"></span>
+          <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Proceso</span>
+          <span class="w-10 h-px bg-caoba"></span>
+        </div>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold text-tinta mb-4">Cómo Trabajamos</h2>
+        <p class="text-tinta/70 text-lg max-w-2xl mx-auto">Cuatro pasos simples, cero complicaciones.</p>
+      </div>
+
+      <!-- 4 pasos -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 mb-20">
+        <!-- Paso 1 -->
+        <div class="reveal relative bg-crema p-8 rounded-2xl shadow-sm border border-caoba/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <span class="step-number">01</span>
+          <div class="relative z-10">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="1.5" class="mb-5">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+              <circle cx="12" cy="10" r="1.5" fill="#8B4513"/>
+            </svg>
+            <h3 class="font-display text-xl font-bold text-tinta mb-2">Traes tu idea</h3>
+            <p class="text-tinta/65 text-sm leading-relaxed">Un pin, una foto, un boceto en servilleta. Lo que sea, nos sirve para arrancar.</p>
+          </div>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="reveal relative bg-crema p-8 rounded-2xl shadow-sm border border-caoba/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <span class="step-number">02</span>
+          <div class="relative z-10">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="1.5" class="mb-5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <h3 class="font-display text-xl font-bold text-tinta mb-2">Elegimos la madera</h3>
+            <p class="text-tinta/65 text-sm leading-relaxed">Te asesoramos: caoba, cedro, roble, saman. Cada pieza merece su madera.</p>
+          </div>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="reveal relative bg-crema p-8 rounded-2xl shadow-sm border border-caoba/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <span class="step-number">03</span>
+          <div class="relative z-10">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="1.5" class="mb-5">
+              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+            </svg>
+            <h3 class="font-display text-xl font-bold text-tinta mb-2">Fabricamos</h3>
+            <p class="text-tinta/65 text-sm leading-relaxed">Gestionamos al taller de confianza. Tú sigues el avance sin mover un dedo.</p>
+          </div>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="reveal relative bg-crema p-8 rounded-2xl shadow-sm border border-caoba/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <span class="step-number">04</span>
+          <div class="relative z-10">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="1.5" class="mb-5">
+              <path d="M20 7L9 18l-5-5"/>
+            </svg>
+            <h3 class="font-display text-xl font-bold text-tinta mb-2">Entrega perfecta</h3>
+            <p class="text-tinta/65 text-sm leading-relaxed">Instalación incluida. Revisión contigo. Si algo no está bien, lo arreglamos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dos videos del proceso -->
+      <div class="grid md:grid-cols-2 gap-6 reveal">
+        <div class="aspect-video rounded-2xl overflow-hidden shadow-xl border border-caoba/10">
+          <!-- REEMPLAZA VIDEO_ID_AQUI con el ID de tu video de YouTube (los caracteres después de ?v= en la URL) -->
+          <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_AQUI?rel=0&modestbranding=1"
+            width="100%" height="100%" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"
+            title="CaobaRD — Nuestro proceso">
+          </iframe>
+        </div>
+        <div class="aspect-video rounded-2xl overflow-hidden shadow-xl border border-caoba/10">
+          <!-- REEMPLAZA VIDEO_ID_AQUI con el ID de tu video de YouTube (los caracteres después de ?v= en la URL) -->
+          <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_AQUI?rel=0&modestbranding=1"
+            width="100%" height="100%" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"
+            title="CaobaRD — Dentro del taller">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 4. SERVICIOS PREVIEW                          -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-crema">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6 reveal">
+        <div>
+          <div class="inline-flex items-center gap-3 mb-6">
+            <span class="w-10 h-px bg-caoba"></span>
+            <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Servicios</span>
+          </div>
+          <h2 class="font-display text-4xl lg:text-5xl font-bold text-tinta leading-tight max-w-xl">
+            Todo lo que puedes<br><span class="italic text-caoba">imaginar en madera.</span>
+          </h2>
+        </div>
+        <p class="text-tinta/70 max-w-md">Desde una mesa de comedor hasta una cocina completa: diseñamos, fabricamos e instalamos.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Muebles a Medida -->
+        <a href="muebles.html" class="service-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80" alt="Muebles a medida" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-8">
+            <div class="text-dorado text-[10px] tracking-[.3em] uppercase mb-2">01 · Servicio</div>
+            <h3 class="font-display text-3xl font-bold text-crema mb-3">Muebles a Medida</h3>
+            <p class="text-crema/80 text-sm mb-5 leading-relaxed">Mesas, sillas, camas, libreros, consolas. Cada pieza diseñada para tu espacio exacto.</p>
+            <span class="inline-flex items-center gap-2 text-dorado text-sm font-semibold group-hover:gap-3 transition-all">
+              Ver más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Cocinas y Baños -->
+        <a href="cocinas-banos.html" class="service-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="Cocinas y baños" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-8">
+            <div class="text-dorado text-[10px] tracking-[.3em] uppercase mb-2">02 · Servicio</div>
+            <h3 class="font-display text-3xl font-bold text-crema mb-3">Cocinas y Baños</h3>
+            <p class="text-crema/80 text-sm mb-5 leading-relaxed">Gabinetes, islas, topes, lavamanos. Funcionalidad y belleza en el corazón de la casa.</p>
+            <span class="inline-flex items-center gap-2 text-dorado text-sm font-semibold group-hover:gap-3 transition-all">
+              Ver más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Puertas y Armarios -->
+        <a href="puertas-armarios.html" class="service-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=800&q=80" alt="Puertas y armarios" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-8">
+            <div class="text-dorado text-[10px] tracking-[.3em] uppercase mb-2">03 · Servicio</div>
+            <h3 class="font-display text-3xl font-bold text-crema mb-3">Puertas y Armarios</h3>
+            <p class="text-crema/80 text-sm mb-5 leading-relaxed">Puertas principales, walk-in closets, vestidores. Primera impresión y almacenamiento elegante.</p>
+            <span class="inline-flex items-center gap-2 text-dorado text-sm font-semibold group-hover:gap-3 transition-all">
+              Ver más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 5. PINTEREST CTA                              -->
+  <!-- ============================================= -->
+  <section class="relative py-24 lg:py-32 bg-caoba-dark overflow-hidden">
+    <!-- Textura madera -->
+    <div class="absolute inset-0 opacity-30"
+         style="background-image: repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(201,168,76,.08) 40px, rgba(201,168,76,.08) 41px);"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-dorado/10 blur-3xl rounded-full"></div>
+
+    <div class="relative max-w-5xl mx-auto px-6 lg:px-10 text-center reveal">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="#C9A84C" class="mx-auto mb-6">
+        <path d="M12 0a12 12 0 00-4.373 23.17c-.103-.985-.196-2.502.041-3.579.213-.973 1.379-6.197 1.379-6.197s-.352-.705-.352-1.747c0-1.638.95-2.86 2.132-2.86 1.005 0 1.491.754 1.491 1.659 0 1.01-.644 2.52-.976 3.918-.278 1.171.588 2.126 1.744 2.126 2.092 0 3.702-2.207 3.702-5.39 0-2.818-2.025-4.788-4.917-4.788-3.349 0-5.314 2.511-5.314 5.106 0 1.012.39 2.095.877 2.685.097.117.11.22.082.339l-.329 1.342c-.053.218-.172.265-.397.16-1.48-.69-2.405-2.854-2.405-4.593 0-3.74 2.717-7.177 7.83-7.177 4.111 0 7.306 2.929 7.306 6.844 0 4.084-2.575 7.37-6.15 7.37-1.2 0-2.328-.624-2.714-1.361l-.738 2.813c-.267 1.028-.987 2.316-1.47 3.103A12 12 0 1012 0z"/>
+      </svg>
+      <h2 class="font-display text-4xl lg:text-6xl font-bold text-crema leading-tight mb-6">
+        ¿Tienes una idea en<br><span class="italic text-dorado">Pinterest?</span> Nosotros la fabricamos.
+      </h2>
+      <p class="text-crema/75 text-lg max-w-2xl mx-auto mb-10">
+        Copia el link, haz captura, o guarda el pin. Mándanoslo por WhatsApp y en menos de 24 horas tienes respuesta.
+      </p>
+      <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20vi%20una%20idea%20en%20Pinterest%20y%20quiero%20algo%20similar"
+         target="_blank"
+         class="inline-flex items-center gap-3 bg-dorado hover:bg-crema text-tinta px-10 py-5 rounded-full font-semibold text-lg transition-all hover:scale-105 shadow-2xl">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Envíanos tu idea por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 6. TIPOS DE MADERA PREVIEW                    -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-crema">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-caoba"></span>
+          <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Maderas</span>
+          <span class="w-10 h-px bg-caoba"></span>
+        </div>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold text-tinta mb-4">La materia prima lo es todo</h2>
+        <p class="text-tinta/70 text-lg max-w-2xl mx-auto">Trabajamos solo con maderas nobles seleccionadas, cada una con su carácter único.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Caoba -->
+        <div class="reveal group">
+          <div class="aspect-square overflow-hidden rounded-2xl mb-5 shadow-md">
+            <img src="https://images.unsplash.com/photo-1520637736862-4d197d17c55a?w=600&q=80" alt="Madera de caoba" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          </div>
+          <div class="flex items-center gap-3 mb-2">
+            <span class="w-4 h-4 rounded-full" style="background:#8B4513"></span>
+            <h3 class="font-display text-2xl font-bold text-tinta">Caoba</h3>
+          </div>
+          <p class="text-tinta/65 text-sm leading-relaxed">Madera premium dominicana. Color rojizo oscuro, dureza alta, resistente a humedad.</p>
+        </div>
+
+        <!-- Cedro -->
+        <div class="reveal group">
+          <div class="aspect-square overflow-hidden rounded-2xl mb-5 shadow-md">
+            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=600&q=80" alt="Madera de cedro" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          </div>
+          <div class="flex items-center gap-3 mb-2">
+            <span class="w-4 h-4 rounded-full" style="background:#A0522D"></span>
+            <h3 class="font-display text-2xl font-bold text-tinta">Cedro</h3>
+          </div>
+          <p class="text-tinta/65 text-sm leading-relaxed">Fragante y noble. Repele insectos naturalmente. Ideal para armarios y vestidores.</p>
+        </div>
+
+        <!-- Saman -->
+        <div class="reveal group">
+          <div class="aspect-square overflow-hidden rounded-2xl mb-5 shadow-md">
+            <img src="https://images.unsplash.com/photo-1611145434336-2324aa4079ce?w=600&q=80" alt="Madera de saman" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          </div>
+          <div class="flex items-center gap-3 mb-2">
+            <span class="w-4 h-4 rounded-full" style="background:#C4A882"></span>
+            <h3 class="font-display text-2xl font-bold text-tinta">Saman</h3>
+          </div>
+          <p class="text-tinta/65 text-sm leading-relaxed">Madera tropical icónica. Piezas grandes únicas con veta espectacular e irrepetible.</p>
+        </div>
+      </div>
+
+      <div class="text-center reveal">
+        <a href="maderas.html" class="inline-flex items-center gap-3 border-2 border-caoba text-caoba hover:bg-caoba hover:text-crema px-8 py-4 rounded-full font-semibold transition-all">
+          Ver todas las maderas
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 7. TESTIMONIOS                                -->
+  <!-- ============================================= -->
+  <!-- REEMPLAZA con testimonios reales de clientes -->
+  <section class="py-24 lg:py-32 bg-saman/15">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-16 reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-caoba"></span>
+          <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Testimonios</span>
+          <span class="w-10 h-px bg-caoba"></span>
+        </div>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold text-tinta">Lo que dicen nuestros clientes</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Testimonio 1 -->
+        <div class="reveal bg-crema p-8 rounded-2xl shadow-md border border-caoba/10 relative">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#C9A84C" class="absolute top-6 right-6 opacity-30">
+            <path d="M7.17 17q-1.325 0-2.247-.925Q4 15.15 4 13.825q0-.8.325-1.663.325-.862 1.025-1.887Q6.05 9.25 7.175 8.225 8.3 7.2 9.825 6.35q.2-.125.463-.1.262.025.412.25.15.225.125.475-.025.25-.225.4-1.65 1.25-2.563 2.375Q7.125 10.875 7.125 11.8q.175-.075.438-.112.262-.038.462-.038.95 0 1.638.688.687.687.687 1.637 0 1.3-.887 2.162-.888.863-2.288.863Zm9.5 0q-1.325 0-2.248-.925-.922-.925-.922-2.25 0-.8.325-1.663.325-.862 1.025-1.887.7-1.025 1.825-2.05Q17.8 7.2 19.325 6.35q.2-.125.463-.1.262.025.412.25.15.225.125.475-.025.25-.225.4-1.65 1.25-2.563 2.375-.912 1.125-.912 2.05.175-.075.438-.112.262-.038.462-.038.95 0 1.638.688.687.687.687 1.637 0 1.3-.887 2.162-.888.863-2.288.863Z"/>
+          </svg>
+          <div class="flex gap-1 mb-5 text-dorado">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-tinta/80 italic leading-relaxed mb-6">"Les mostré una foto de Pinterest de la mesa de mis sueños. Tres semanas después la tenía en mi casa, en caoba pura, mejor que la original. Y lo mejor: yo vivo en Santo Domingo y ellos coordinaron todo."</p>
+          <div class="flex items-center gap-3 pt-5 border-t border-caoba/10">
+            <div class="w-11 h-11 rounded-full bg-caoba text-crema flex items-center justify-center font-display font-bold">M</div>
+            <div>
+              <div class="font-semibold text-tinta">María R.</div>
+              <div class="text-xs text-tinta/60">Santo Domingo, RD</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="reveal bg-crema p-8 rounded-2xl shadow-md border border-caoba/10 relative">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#C9A84C" class="absolute top-6 right-6 opacity-30">
+            <path d="M7.17 17q-1.325 0-2.247-.925Q4 15.15 4 13.825q0-.8.325-1.663.325-.862 1.025-1.887Q6.05 9.25 7.175 8.225 8.3 7.2 9.825 6.35q.2-.125.463-.1.262.025.412.25.15.225.125.475-.025.25-.225.4-1.65 1.25-2.563 2.375Q7.125 10.875 7.125 11.8q.175-.075.438-.112.262-.038.462-.038.95 0 1.638.688.687.687.687 1.637 0 1.3-.887 2.162-.888.863-2.288.863Zm9.5 0q-1.325 0-2.248-.925-.922-.925-.922-2.25 0-.8.325-1.663.325-.862 1.025-1.887.7-1.025 1.825-2.05Q17.8 7.2 19.325 6.35q.2-.125.463-.1.262.025.412.25.15.225.125.475-.025.25-.225.4-1.65 1.25-2.563 2.375-.912 1.125-.912 2.05.175-.075.438-.112.262-.038.462-.038.95 0 1.638.688.687.687.687 1.637 0 1.3-.887 2.162-.888.863-2.288.863Z"/>
+          </svg>
+          <div class="flex gap-1 mb-5 text-dorado">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-tinta/80 italic leading-relaxed mb-6">"Nos hicieron la cocina completa: gabinetes, isla, topes en saman. Lo mejor: un solo contacto, cero dolores de cabeza. Todo coordinado por ellos de principio a fin."</p>
+          <div class="flex items-center gap-3 pt-5 border-t border-caoba/10">
+            <div class="w-11 h-11 rounded-full bg-caoba text-crema flex items-center justify-center font-display font-bold">C</div>
+            <div>
+              <div class="font-semibold text-tinta">Carlos M.</div>
+              <div class="text-xs text-tinta/60">Santiago, RD</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="reveal bg-crema p-8 rounded-2xl shadow-md border border-caoba/10 relative">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#C9A84C" class="absolute top-6 right-6 opacity-30">
+            <path d="M7.17 17q-1.325 0-2.247-.925Q4 15.15 4 13.825q0-.8.325-1.663.325-.862 1.025-1.887Q6.05 9.25 7.175 8.225 8.3 7.2 9.825 6.35q.2-.125.463-.1.262.025.412.25.15.225.125.475-.025.25-.225.4-1.65 1.25-2.563 2.375Q7.125 10.875 7.125 11.8q.175-.075.438-.112.262-.038.462-.038.95 0 1.638.688.687.687.687 1.637 0 1.3-.887 2.162-.888.863-2.288.863Zm9.5 0q-1.325 0-2.248-.925-.922-.925-.922-2.25 0-.8.325-1.663.325-.862 1.025-1.887.7-1.025 1.825-2.05Q17.8 7.2 19.325 6.35q.2-.125.463-.1.262.025.412.25.15.225.125.475-.025.25-.225.4-1.65 1.25-2.563 2.375-.912 1.125-.912 2.05.175-.075.438-.112.262-.038.462-.038.95 0 1.638.688.687.687.687 1.637 0 1.3-.887 2.162-.888.863-2.288.863Z"/>
+          </svg>
+          <div class="flex gap-1 mb-5 text-dorado">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-tinta/80 italic leading-relaxed mb-6">"Pedimos un walk-in closet en cedro para la villa en Punta Cana. Pensábamos que la distancia iba a ser un problema, pero CaobaRD lo resolvió todo. La madera huele divino, el acabado de revista."</p>
+          <div class="flex items-center gap-3 pt-5 border-t border-caoba/10">
+            <div class="w-11 h-11 rounded-full bg-caoba text-crema flex items-center justify-center font-display font-bold">L</div>
+            <div>
+              <div class="font-semibold text-tinta">Laura P.</div>
+              <div class="text-xs text-tinta/60">Punta Cana, RD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 8. EMAIL MARKETING — MAILCHIMP                -->
+  <!-- ============================================= -->
+  <section class="relative py-24 lg:py-32 bg-tinta overflow-hidden">
+    <!-- Decoración -->
+    <div class="absolute inset-0 opacity-20"
+         style="background-image: repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(201,168,76,.1) 60px, rgba(201,168,76,.1) 61px);"></div>
+    <div class="absolute -top-20 -right-20 w-96 h-96 bg-caoba/30 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-dorado/10 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-3xl mx-auto px-6 lg:px-10 text-center reveal">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" class="mx-auto mb-6">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <path d="M22 6l-10 7L2 6"/>
+      </svg>
+      <h2 class="font-display text-3xl lg:text-5xl font-bold text-crema leading-tight mb-5">
+        Recibe ideas de diseño<br><span class="italic text-dorado">e inspiración en madera</span>
+      </h2>
+      <p class="text-crema/70 text-lg mb-10 max-w-xl mx-auto">
+        Una vez al mes. Tendencias, tips de cuidado de tu madera, y proyectos nuevos del taller. Cero spam.
+      </p>
+
+      <form action="https://github.us8.list-manage.com/subscribe/post?u=bdea07413b85e93ae701bc3e5&id=NUEVO_ID_AUDIENCIA_CAOBARD&f_id=NUEVO_F_ID"
+            method="post"
+            target="_blank"
+            class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+        <input type="email"
+               name="EMAIL"
+               placeholder="Tu correo electrónico"
+               required
+               class="flex-1 px-6 py-4 rounded-full bg-crema/10 border border-crema/20 text-crema placeholder-crema/40 focus:outline-none focus:border-dorado transition-colors">
+        <!-- Honeypot anti-bot -->
+        <div style="position:absolute;left:-5000px;" aria-hidden="true">
+          <input type="text" name="b_bdea07413b85e93ae701bc3e5_NUEVO_ID" tabindex="-1" value="">
+        </div>
+        <button type="submit"
+                class="bg-dorado hover:bg-crema text-tinta px-8 py-4 rounded-full font-semibold transition-all hover:scale-105">
+          Suscribirme
+        </button>
+      </form>
+      <!-- IMPORTANTE: Crea una nueva audiencia "CaobaRD" en tu cuenta Mailchimp y reemplaza NUEVO_ID_AUDIENCIA_CAOBARD con el ID que te da Mailchimp -->
+
+      <p class="text-crema/40 text-xs mt-6">Al suscribirte aceptas recibir emails de CaobaRD. Puedes darte de baja cuando quieras.</p>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FOOTER                                        -->
+  <!-- ============================================= -->
+  <footer class="bg-caoba-dark text-crema/80 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+        <!-- Brand -->
+        <div>
+          <a href="index.html" class="flex items-center gap-2 mb-5">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 3 L28 10 L28 22 L16 29 L4 22 L4 10 Z" stroke="#C9A84C" stroke-width="1.5" fill="#C9A84C" fill-opacity=".15"/>
+              <path d="M16 3 L16 29 M4 10 L28 22 M28 10 L4 22" stroke="#C9A84C" stroke-width="1"/>
+            </svg>
+            <span class="font-display text-2xl font-bold text-crema">Caoba<span class="text-dorado">RD</span></span>
+          </a>
+          <p class="text-sm leading-relaxed mb-5">Muebles personalizados en madera premium. Servicio en toda la República Dominicana 🇩🇴</p>
+          <div class="flex gap-3">
+            <a href="#" class="w-9 h-9 rounded-full border border-crema/20 flex items-center justify-center hover:bg-dorado hover:text-tinta hover:border-dorado transition-all">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.098.119.112.224.083.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12.017 24c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full border border-crema/20 flex items-center justify-center hover:bg-dorado hover:text-tinta hover:border-dorado transition-all">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full border border-crema/20 flex items-center justify-center hover:bg-dorado hover:text-tinta hover:border-dorado transition-all">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 00-4.373 23.17c-.103-.985-.196-2.502.041-3.579.213-.973 1.379-6.197 1.379-6.197s-.352-.705-.352-1.747c0-1.638.95-2.86 2.132-2.86 1.005 0 1.491.754 1.491 1.659 0 1.01-.644 2.52-.976 3.918-.278 1.171.588 2.126 1.744 2.126 2.092 0 3.702-2.207 3.702-5.39 0-2.818-2.025-4.788-4.917-4.788-3.349 0-5.314 2.511-5.314 5.106 0 1.012.39 2.095.877 2.685.097.117.11.22.082.339l-.329 1.342c-.053.218-.172.265-.397.16-1.48-.69-2.405-2.854-2.405-4.593 0-3.74 2.717-7.177 7.83-7.177 4.111 0 7.306 2.929 7.306 6.844 0 4.084-2.575 7.37-6.15 7.37-1.2 0-2.328-.624-2.714-1.361l-.738 2.813c-.267 1.028-.987 2.316-1.47 3.103A12 12 0 1012 0z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicios -->
+        <div>
+          <h4 class="font-display text-lg font-bold text-dorado mb-5">Servicios</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="muebles.html" class="hover:text-dorado transition-colors">Muebles a Medida</a></li>
+            <li><a href="cocinas-banos.html" class="hover:text-dorado transition-colors">Cocinas y Baños</a></li>
+            <li><a href="puertas-armarios.html" class="hover:text-dorado transition-colors">Puertas y Armarios</a></li>
+            <li><a href="maderas.html" class="hover:text-dorado transition-colors">Tipos de Madera</a></li>
+          </ul>
+        </div>
+
+        <!-- Empresa -->
+        <div>
+          <h4 class="font-display text-lg font-bold text-dorado mb-5">Empresa</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="portafolio.html" class="hover:text-dorado transition-colors">Portafolio</a></li>
+            <li><a href="inspiracion.html" class="hover:text-dorado transition-colors">Inspiración</a></li>
+            <li><a href="contacto.html" class="hover:text-dorado transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <h4 class="font-display text-lg font-bold text-dorado mb-5">Contáctanos</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Base: Santiago, RD<br><span class="text-dorado/80 text-xs">Servicio en todo el país 🇩🇴</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              +1 (809) 123-4567
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d04030b022d0e0c020f0c1f09430e0200">[email&#160;protected]</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-crema/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-crema/50">
+        <p>© 2026 CaobaRD. Todos los derechos reservados.</p>
+        <p>Hecho con <span class="text-dorado">♦</span> en República Dominicana 🇩🇴</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================= -->
+  <!-- BOTÓN FLOTANTE WHATSAPP                       -->
+  <!-- ============================================= -->
+  <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20información%20sobre%20muebles%20personalizados"
+     target="_blank"
+     aria-label="Contactar por WhatsApp"
+     class="wa-float fixed bottom-6 right-6 z-[9999] w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe5a] text-white flex items-center justify-center shadow-2xl transition-all hover:scale-110">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================= -->
+  <!-- SCRIPTS                                       -->
+  <!-- ============================================= -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // Menú móvil
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose  = document.getElementById('menuClose');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', () => mobileMenu.classList.add('open'));
+    menuClose .addEventListener('click', () => mobileMenu.classList.remove('open'));
+    // Cerrar menú al hacer clic en un enlace
+    mobileMenu.querySelectorAll('a').forEach(link =>
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'))
+    );
+
+    // Reveal on scroll con IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+  <!-- ============================================= -->
+  <!-- GUÍA DE PERSONALIZACIÓN PARA YERDI            -->
+  <!-- ============================================= -->
+  <!--
+  =========================================================
+  📝 CÓMO PERSONALIZAR ESTE ARCHIVO (index.html)
+  =========================================================
+
+  1️⃣ IMÁGENES PLACEHOLDER (Unsplash)
+     - Todas las imágenes usan URLs de Unsplash tipo:
+       https://images.unsplash.com/photo-XXXXXXX?w=800&q=80
+     - Para reemplazar por fotos propias:
+       a) Sube tus fotos a postimg.cc (igual que en Little Haven)
+       b) Copia el "direct link" de cada foto
+       c) Busca en este archivo las URLs de unsplash.com y reemplázalas
+     - Tamaños recomendados:
+       · Hero: 1920x1080 px
+       · Servicios: 800x1000 px (formato vertical)
+       · Maderas: 600x600 px (cuadrado)
+
+  2️⃣ VIDEOS DE YOUTUBE
+     - Busca en el archivo: VIDEO_ID_AQUI (aparece 3 veces)
+     - Reemplaza cada uno con el ID de tu video de YouTube
+     - Ejemplo: si tu video es https://youtube.com/watch?v=dQw4w9WgXcQ
+       entonces el ID es: dQw4w9WgXcQ
+     - Los 3 videos son:
+       · Video 1: Presentación general (después del hero)
+       · Video 2: Nuestro proceso (sección "Cómo trabajamos", izquierda)
+       · Video 3: Dentro del taller (sección "Cómo trabajamos", derecha)
+     - NOTA: En "Quiénes Somos" originalmente había un video vertical,
+       pero lo reemplazamos por un mapa SVG de RD con cobertura nacional
+       que refuerza tu posicionamiento de "servicio en todo el país".
+
+  2.5️⃣ MAPA DE RD — CIUDADES DE COBERTURA
+     - El mapa SVG en "Quiénes Somos" muestra 7 ciudades: Santiago (base),
+       Santo Domingo, Puerto Plata, Punta Cana, La Romana, Barahona, La Vega.
+     - Si quieres agregar/quitar ciudades, busca la sección que dice
+       "SVG Mapa de RD estilizado" y edita los <g filter="url(#pinShadow)">.
+     - Cada pin tiene: circle (punto) + text (nombre).
+     - Las líneas punteadas conectan Santiago con las demás ciudades —
+       si agregas una ciudad nueva, añade también su línea en el <g> final.
+
+  3️⃣ NÚMERO DE WHATSAPP
+     - Número actual (placeholder): 18091234567
+     - Busca en el archivo: 18091234567 y reemplázalo por tu número real
+     - Formato: código país + número SIN espacios ni + ni guiones
+     - Ejemplo: 18095551234 (para +1 809 555 1234)
+     - Aparece en: botón del menú, hero, Pinterest CTA, footer, WhatsApp flotante
+
+  4️⃣ MAILCHIMP — CREAR AUDIENCIA "CaobaRD"
+     a) Entra a tu cuenta de Mailchimp
+     b) Audience → Create Audience → nómbrala "CaobaRD"
+     c) Una vez creada, ve a Signup forms → Embedded forms
+     d) Copia el valor de "id" en el action URL (algo como: id=a1b2c3d4e5)
+     e) En este archivo busca: NUEVO_ID_AUDIENCIA_CAOBARD y reemplázalo
+     f) También busca: NUEVO_F_ID y NUEVO_ID en el honeypot
+     g) Nota: el user ID (u=bdea07413b85e93ae701bc3e5) es tu cuenta principal
+        y NO necesita cambiar — es el mismo que usas en Little Haven.
+
+  5️⃣ GOOGLE ANALYTICS
+     - Busca en el archivo: G-XXXXXXXXXX (aparece 2 veces)
+     - Reemplázalo por tu tag real de Google Analytics para caobard.com
+     - Si no tienes uno: analytics.google.com → crea propiedad "CaobaRD"
+
+  6️⃣ TESTIMONIOS
+     - Busca: "REEMPLAZA con testimonios reales de clientes"
+     - Los 3 testimonios actuales son ficticios
+     - Cuando tengas reseñas reales, reemplaza: nombre, inicial del avatar,
+       ciudad, y el texto entre comillas.
+
+  7️⃣ REDES SOCIALES (footer)
+     - Los 3 íconos en el footer (Pinterest, Instagram, Pinterest) tienen href="#"
+     - Reemplaza "#" con las URLs reales de tus perfiles cuando los tengas.
+
+  =========================================================
+  ✅ LISTO PARA PRODUCCIÓN desde el día 1:
+     · Diseño responsive (móvil, tablet, desktop)
+     · SEO y Schema.org configurad
