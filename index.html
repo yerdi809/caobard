@@ -254,24 +254,46 @@
       </button>
     </nav>
 
+    <!-- Overlay oscuro detrás del menú móvil -->
+    <div id="menuOverlay" class="xl:hidden fixed inset-0 bg-tinta/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
     <!-- Menú móvil slide-in -->
-    <div id="mobileMenu" class="mobile-menu xl:hidden fixed inset-y-0 right-0 w-80 max-w-[85vw] bg-crema shadow-2xl z-50 p-8 flex flex-col">
-      <button id="menuClose" class="self-end p-2 text-tinta mb-8" aria-label="Cerrar menú">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M6 18L18 6"/></svg>
-      </button>
-      <ul class="flex flex-col gap-5 text-lg font-display text-tinta">
-        <li><a href="index.html" class="block py-1 border-b border-caoba/10">Inicio</a></li>
-        <li><a href="muebles.html" class="block py-1 border-b border-caoba/10">Muebles a Medida</a></li>
-        <li><a href="cocinas-banos.html" class="block py-1 border-b border-caoba/10">Cocinas y Baños</a></li>
-        <li><a href="puertas-armarios.html" class="block py-1 border-b border-caoba/10">Puertas y Armarios</a></li>
-        <li><a href="maderas.html" class="block py-1 border-b border-caoba/10">Maderas</a></li>
-        <li><a href="portafolio.html" class="block py-1 border-b border-caoba/10">Portafolio</a></li>
-        <li><a href="inspiracion.html" class="block py-1 border-b border-caoba/10">Inspiración</a></li>
-        <li><a href="contacto.html" class="block py-1 border-b border-caoba/10">Contacto</a></li>
-      </ul>
-      <a href="https://wa.me/18091234567" target="_blank" class="btn-caoba mt-8 px-5 py-3 rounded-full text-center font-semibold">
-        Solicitar Presupuesto
-      </a>
+    <div id="mobileMenu" class="mobile-menu xl:hidden fixed inset-y-0 right-0 w-80 max-w-[85vw] bg-crema shadow-2xl z-50 flex flex-col">
+      <!-- Header del menú con fondo caoba -->
+      <div class="bg-caoba-dark px-8 py-6 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <path d="M16 3 L28 10 L28 22 L16 29 L4 22 L4 10 Z" stroke="#C9A84C" stroke-width="1.5" fill="#C9A84C" fill-opacity=".15"/>
+            <path d="M16 3 L16 29 M4 10 L28 22 M28 10 L4 22" stroke="#C9A84C" stroke-width="1"/>
+          </svg>
+          <span class="font-display text-xl font-bold text-crema">Caoba<span class="text-dorado">RD</span></span>
+        </div>
+        <button id="menuClose" class="p-2 text-crema hover:text-dorado transition-colors" aria-label="Cerrar menú">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M6 18L18 6"/></svg>
+        </button>
+      </div>
+
+      <!-- Enlaces del menú -->
+      <nav class="flex-1 px-8 py-8 overflow-y-auto">
+        <ul class="flex flex-col gap-1 font-display text-tinta">
+          <li><a href="index.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Inicio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="muebles.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Muebles a Medida <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="cocinas-banos.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Cocinas y Baños <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="puertas-armarios.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Puertas y Armarios <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="maderas.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Maderas <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="portafolio.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Portafolio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="inspiracion.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Inspiración <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="contacto.html" class="flex items-center justify-between py-4 text-xl hover:text-caoba transition-colors">Contacto <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA al fondo del menú -->
+      <div class="px-8 pb-8 pt-4 border-t border-caoba/10 bg-crema">
+        <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20solicitar%20un%20presupuesto" target="_blank" class="btn-caoba flex items-center justify-center gap-2 px-5 py-4 rounded-full text-center font-semibold">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar Presupuesto
+        </a>
+      </div>
     </div>
   </header>
 
@@ -293,24 +315,24 @@
         <span class="text-dorado text-xs tracking-[.3em] uppercase font-medium">Hecho en República Dominicana 🇩🇴</span>
       </div>
 
-      <h1 class="fade-up delay-1 font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-crema leading-[1.05] max-w-4xl">
+      <h1 class="fade-up delay-1 font-display text-[2.25rem] sm:text-5xl lg:text-7xl font-bold text-crema leading-[1.08] max-w-4xl">
         Muebles Personalizados<br>
         <span class="italic text-dorado">en Madera</span><span class="text-crema"> —</span><br>
-        <span class="text-3xl sm:text-4xl lg:text-5xl font-normal italic text-crema/90">trae tu idea, la hacemos realidad.</span>
+        <span class="text-2xl sm:text-4xl lg:text-5xl font-normal italic text-crema/90">trae tu idea, la hacemos realidad.</span>
       </h1>
 
-      <p class="fade-up delay-2 mt-8 text-lg lg:text-xl text-crema/80 max-w-2xl leading-relaxed">
+      <p class="fade-up delay-2 mt-6 sm:mt-8 text-base sm:text-lg lg:text-xl text-crema/80 max-w-2xl leading-relaxed">
         Diseño a medida con las maderas más nobles del Caribe. Del pin de Pinterest a tu casa — servicio en <span class="text-dorado font-medium">toda la República Dominicana</span>.
       </p>
 
-      <div class="fade-up delay-3 mt-10 flex flex-col sm:flex-row gap-4">
+      <div class="fade-up delay-3 mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
         <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20solicitar%20un%20presupuesto%20gratis"
            target="_blank"
-           class="btn-caoba px-8 py-4 rounded-full font-semibold text-base inline-flex items-center justify-center gap-3">
+           class="btn-caoba px-6 sm:px-8 py-4 rounded-full font-semibold text-sm sm:text-base inline-flex items-center justify-center gap-3">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Solicitar Presupuesto Gratis
         </a>
-        <a href="portafolio.html" class="btn-outline px-8 py-4 rounded-full font-semibold text-base inline-flex items-center justify-center gap-3">
+        <a href="portafolio.html" class="btn-outline px-6 sm:px-8 py-4 rounded-full font-semibold text-sm sm:text-base inline-flex items-center justify-center gap-3">
           Ver Portafolio
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
@@ -368,7 +390,7 @@
           Somos el puente entre tu visión y los mejores ebanistas del país. Tú hablas con una sola persona. Nosotros cuidamos cada detalle: diseño, madera, fabricación, entrega.
         </p>
         <p class="text-tinta/75 text-lg leading-relaxed mb-8">
-          <span class="font-semibold text-caoba">¿Estás en Santo Domingo, Punta Cana, Barahona o Puerto Plata?</span> No importa dónde vivas — coordinamos con talleres de confianza en tu zona para llevarte la misma calidad premium, sin importar la distancia.
+          <span class="font-semibold text-caoba">¿Estás en Santo Domingo, Punta Cana, Barahona o Puerto Plata?</span> No importa dónde vivas — llevamos la misma calidad premium hasta tu puerta, sin importar la distancia.
         </p>
         <div class="grid grid-cols-3 gap-6 pt-6 border-t border-caoba/15">
           <div>
@@ -386,169 +408,67 @@
         </div>
       </div>
 
-      <!-- Mapa estilizado de RD con cobertura nacional -->
+      <!-- Tarjeta visual: Cobertura nacional (sin mencionar base) -->
       <div class="reveal relative">
         <div class="absolute -top-4 -left-4 w-full h-full border-2 border-caoba/30 rounded-2xl"></div>
-        <div class="relative bg-gradient-to-br from-crema to-saman/20 rounded-2xl overflow-hidden shadow-2xl p-8 lg:p-10 aspect-[4/5] flex flex-col">
-          <!-- Header del mapa -->
-          <div class="mb-4">
-            <div class="text-[10px] tracking-[.3em] uppercase text-caoba font-semibold mb-2">Cobertura Nacional</div>
-            <h3 class="font-display text-2xl font-bold text-tinta leading-tight">Servimos toda<br>República Dominicana 🇩🇴</h3>
-          </div>
+        <div class="relative bg-gradient-to-br from-caoba-dark via-caoba to-caoba-dark rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
+          <!-- Textura de líneas de madera -->
+          <div class="absolute inset-0 opacity-20"
+               style="background-image: repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(201,168,76,.15) 30px, rgba(201,168,76,.15) 31px);"></div>
+          <!-- Glow dorado -->
+          <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-80 h-80 bg-dorado/20 rounded-full blur-3xl"></div>
 
-          <!-- SVG Mapa de RD estilizado -->
-          <div class="flex-1 flex items-center justify-center">
-            <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
-              <defs>
-                <radialGradient id="mapGlow" cx="50%" cy="50%" r="55%">
-                  <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.22"/>
-                  <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
-                </radialGradient>
-                <linearGradient id="mapFill" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#8B4513" stop-opacity="0.18"/>
-                  <stop offset="100%" stop-color="#8B4513" stop-opacity="0.08"/>
-                </linearGradient>
-                <filter id="pinShadow" x="-50%" y="-50%" width="200%" height="200%">
-                  <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#8B4513" flood-opacity="0.35"/>
-                </filter>
-              </defs>
-
-              <!-- Glow de fondo -->
-              <ellipse cx="260" cy="180" rx="250" ry="130" fill="url(#mapGlow)"/>
-
-              <!-- Contorno realista de República Dominicana
-                   Sigue la forma real: alargada este-oeste, con península de Samaná al NE,
-                   bahía de Samaná, península de Barahona al SO, y frontera con Haití al O -->
-              <path d="M 80 165
-                       Q 75 145, 90 130
-                       Q 110 115, 135 118
-                       Q 160 108, 185 115
-                       Q 210 105, 235 112
-                       Q 260 102, 285 108
-                       Q 310 100, 335 105
-                       Q 365 98, 395 108
-                       Q 420 100, 440 115
-                       L 455 125
-                       Q 470 135, 468 150
-                       Q 475 155, 460 165
-                       L 445 170
-                       Q 455 175, 448 185
-                       L 425 188
-                       Q 430 200, 415 205
-                       L 395 200
-                       Q 380 210, 360 208
-                       Q 340 215, 320 210
-                       Q 300 220, 280 215
-                       L 270 230
-                       Q 258 245, 245 240
-                       Q 230 248, 215 240
-                       L 200 228
-                       Q 180 238, 160 230
-                       Q 145 240, 130 235
-                       Q 115 245, 100 235
-                       Q 85 225, 82 205
-                       L 88 195
-                       Q 78 185, 80 165 Z"
-                    fill="url(#mapFill)"
-                    stroke="#8B4513"
-                    stroke-width="2"
-                    stroke-linejoin="round"/>
-
-              <!-- Frontera con Haití (línea punteada en el oeste) -->
-              <path d="M 82 165 Q 78 185, 85 205 Q 88 220, 95 232"
-                    fill="none"
-                    stroke="#8B4513"
-                    stroke-width="1.5"
-                    stroke-dasharray="4,5"
-                    opacity="0.45"/>
-
-              <!-- Líneas de conexión desde Santiago hacia las otras ciudades -->
-              <g stroke="#8B4513" stroke-width="1" stroke-dasharray="2,3" opacity="0.3" fill="none">
-                <line x1="215" y1="155" x2="290" y2="200"/>
-                <line x1="215" y1="155" x2="200" y2="130"/>
-                <line x1="215" y1="155" x2="420" y2="165"/>
-                <line x1="215" y1="155" x2="370" y2="195"/>
-                <line x1="215" y1="155" x2="145" y2="220"/>
-                <line x1="215" y1="155" x2="250" y2="178"/>
-              </g>
-
-              <!-- Puntos de ciudades -->
-
-              <!-- Santiago (base de operaciones) - pin grande animado -->
-              <g filter="url(#pinShadow)">
-                <circle cx="215" cy="155" r="11" fill="#8B4513">
-                  <animate attributeName="r" values="11;14;11" dur="2.5s" repeatCount="indefinite"/>
-                  <animate attributeName="opacity" values="1;0.85;1" dur="2.5s" repeatCount="indefinite"/>
-                </circle>
-                <circle cx="215" cy="155" r="5" fill="#C9A84C"/>
-                <text x="215" y="140" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#1C1008">Santiago</text>
-                <text x="215" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#8B4513" font-weight="700">★ BASE</text>
-              </g>
-
-              <!-- Puerto Plata (norte) -->
-              <g filter="url(#pinShadow)">
-                <circle cx="200" cy="130" r="6" fill="#8B4513" fill-opacity="0.85"/>
-                <circle cx="200" cy="130" r="2.5" fill="#C9A84C"/>
-                <text x="155" y="115" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">Puerto Plata</text>
-              </g>
-
-              <!-- La Vega (centro) -->
-              <g filter="url(#pinShadow)">
-                <circle cx="250" cy="178" r="5" fill="#8B4513" fill-opacity="0.75"/>
-                <circle cx="250" cy="178" r="2" fill="#C9A84C"/>
-                <text x="268" y="182" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">La Vega</text>
-              </g>
-
-              <!-- Santo Domingo (capital, sur-centro) -->
-              <g filter="url(#pinShadow)">
-                <circle cx="290" cy="200" r="7" fill="#8B4513" fill-opacity="0.9"/>
-                <circle cx="290" cy="200" r="3" fill="#C9A84C"/>
-                <text x="290" y="222" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1C1008">Santo Domingo</text>
-              </g>
-
-              <!-- La Romana (sureste) -->
-              <g filter="url(#pinShadow)">
-                <circle cx="370" cy="195" r="6" fill="#8B4513" fill-opacity="0.85"/>
-                <circle cx="370" cy="195" r="2.5" fill="#C9A84C"/>
-                <text x="370" y="215" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">La Romana</text>
-              </g>
-
-              <!-- Punta Cana (extremo este) -->
-              <g filter="url(#pinShadow)">
-                <circle cx="420" cy="165" r="7" fill="#8B4513" fill-opacity="0.9"/>
-                <circle cx="420" cy="165" r="3" fill="#C9A84C"/>
-                <text x="425" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">Punta Cana</text>
-              </g>
-
-              <!-- Barahona (suroeste) -->
-              <g filter="url(#pinShadow)">
-                <circle cx="145" cy="220" r="6" fill="#8B4513" fill-opacity="0.85"/>
-                <circle cx="145" cy="220" r="2.5" fill="#C9A84C"/>
-                <text x="145" y="240" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1C1008">Barahona</text>
-              </g>
-
-              <!-- Etiqueta "HAITÍ" sutil al oeste -->
-              <text x="45" y="175" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#8B4513" opacity="0.4" font-style="italic">Haití</text>
-
-              <!-- Rosa de los vientos decorativa (esquina inferior derecha) -->
-              <g transform="translate(485, 300)" opacity="0.5">
-                <circle cx="0" cy="0" r="14" fill="none" stroke="#8B4513" stroke-width="0.8"/>
-                <path d="M 0,-12 L 2,0 L 0,12 L -2,0 Z" fill="#8B4513"/>
-                <path d="M -12,0 L 0,2 L 12,0 L 0,-2 Z" fill="#8B4513" opacity="0.5"/>
-                <text x="0" y="-17" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#8B4513">N</text>
-              </g>
-            </svg>
-          </div>
-
-          <!-- Footer del mapa -->
-          <div class="mt-4 pt-4 border-t border-caoba/15 flex items-center justify-between text-xs">
-            <div class="flex items-center gap-2 text-tinta/70">
-              <span class="w-2.5 h-2.5 rounded-full bg-caoba"></span>
-              <span>Base: Santiago</span>
+          <div class="relative h-full flex flex-col justify-between p-8 lg:p-10 text-crema">
+            <!-- Header -->
+            <div>
+              <div class="text-[10px] tracking-[.3em] uppercase text-dorado font-semibold mb-3">🇩🇴 Cobertura Nacional</div>
+              <h3 class="font-display text-3xl lg:text-4xl font-bold leading-tight">
+                Llegamos a<br>
+                <span class="italic text-dorado">toda la isla.</span>
+              </h3>
             </div>
-            <div class="flex items-center gap-2 text-tinta/70">
-              <span class="w-2 h-2 rounded-full bg-caoba/70"></span>
-              <span>Servicio nacional</span>
+
+            <!-- Lista de ciudades con iconos de pin -->
+            <div class="grid grid-cols-2 gap-y-4 gap-x-6 my-8">
+              <div class="flex items-center gap-3">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" class="flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="font-medium">Santo Domingo</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" class="flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="font-medium">Santiago</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" class="flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="font-medium">Punta Cana</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" class="flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="font-medium">Puerto Plata</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" class="flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="font-medium">La Romana</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" class="flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="font-medium">Barahona</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" class="flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="font-medium">La Vega</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" class="flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="font-medium">Y más...</span>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="pt-6 border-t border-dorado/20">
+              <p class="text-crema/80 text-sm leading-relaxed italic">
+                "No importa dónde vivas en República Dominicana — si tienes una idea en madera, la hacemos realidad."
+              </p>
             </div>
           </div>
         </div>
@@ -737,15 +657,15 @@
       <svg width="48" height="48" viewBox="0 0 24 24" fill="#C9A84C" class="mx-auto mb-6">
         <path d="M12 0a12 12 0 00-4.373 23.17c-.103-.985-.196-2.502.041-3.579.213-.973 1.379-6.197 1.379-6.197s-.352-.705-.352-1.747c0-1.638.95-2.86 2.132-2.86 1.005 0 1.491.754 1.491 1.659 0 1.01-.644 2.52-.976 3.918-.278 1.171.588 2.126 1.744 2.126 2.092 0 3.702-2.207 3.702-5.39 0-2.818-2.025-4.788-4.917-4.788-3.349 0-5.314 2.511-5.314 5.106 0 1.012.39 2.095.877 2.685.097.117.11.22.082.339l-.329 1.342c-.053.218-.172.265-.397.16-1.48-.69-2.405-2.854-2.405-4.593 0-3.74 2.717-7.177 7.83-7.177 4.111 0 7.306 2.929 7.306 6.844 0 4.084-2.575 7.37-6.15 7.37-1.2 0-2.328-.624-2.714-1.361l-.738 2.813c-.267 1.028-.987 2.316-1.47 3.103A12 12 0 1012 0z"/>
       </svg>
-      <h2 class="font-display text-4xl lg:text-6xl font-bold text-crema leading-tight mb-6">
-        ¿Tienes una idea en<br><span class="italic text-dorado">Pinterest?</span> Nosotros la fabricamos.
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-6xl font-bold text-crema leading-tight mb-6">
+        ¿Tienes una idea en<br><span class="italic text-dorado">Pinterest?</span><br class="sm:hidden"> Nosotros la fabricamos.
       </h2>
-      <p class="text-crema/75 text-lg max-w-2xl mx-auto mb-10">
+      <p class="text-crema/75 text-base sm:text-lg max-w-2xl mx-auto mb-10">
         Copia el link, haz captura, o guarda el pin. Mándanoslo por WhatsApp y en menos de 24 horas tienes respuesta.
       </p>
       <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20vi%20una%20idea%20en%20Pinterest%20y%20quiero%20algo%20similar"
          target="_blank"
-         class="inline-flex items-center gap-3 bg-dorado hover:bg-crema text-tinta px-10 py-5 rounded-full font-semibold text-lg transition-all hover:scale-105 shadow-2xl">
+         class="inline-flex items-center gap-3 bg-dorado hover:bg-crema text-tinta px-6 sm:px-10 py-4 sm:py-5 rounded-full font-semibold text-base sm:text-lg transition-all hover:scale-105 shadow-2xl">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Envíanos tu idea por WhatsApp
       </a>
@@ -869,7 +789,7 @@
             <div class="w-11 h-11 rounded-full bg-caoba text-crema flex items-center justify-center font-display font-bold">C</div>
             <div>
               <div class="font-semibold text-tinta">Carlos M.</div>
-              <div class="text-xs text-tinta/60">Santiago, RD</div>
+              <div class="text-xs text-tinta/60">Puerto Plata, RD</div>
             </div>
           </div>
         </div>
@@ -1004,7 +924,7 @@
           <ul class="space-y-3 text-sm">
             <li class="flex items-start gap-3">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Base: Santiago, RD<br><span class="text-dorado/80 text-xs">Servicio en todo el país 🇩🇴</span></span>
+              <span>República Dominicana 🇩🇴<br><span class="text-dorado/80 text-xs">Servicio en todo el país</span></span>
             </li>
             <li class="flex items-start gap-3">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
@@ -1042,14 +962,30 @@
   <!-- ============================================= -->
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Menú móvil
-    const menuToggle = document.getElementById('menuToggle');
-    const menuClose  = document.getElementById('menuClose');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuToggle.addEventListener('click', () => mobileMenu.classList.add('open'));
-    menuClose .addEventListener('click', () => mobileMenu.classList.remove('open'));
+    const menuToggle  = document.getElementById('menuToggle');
+    const menuClose   = document.getElementById('menuClose');
+    const mobileMenu  = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      menuOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      menuOverlay.classList.add('opacity-100');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      menuOverlay.classList.add('opacity-0', 'pointer-events-none');
+      menuOverlay.classList.remove('opacity-100');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle .addEventListener('click', openMenu);
+    menuClose  .addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
     // Cerrar menú al hacer clic en un enlace
     mobileMenu.querySelectorAll('a').forEach(link =>
-      link.addEventListener('click', () => mobileMenu.classList.remove('open'))
+      link.addEventListener('click', closeMenu)
     );
 
     // Reveal on scroll con IntersectionObserver
