@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipos de Madera: Caoba, Cedro, Roble, Saman y más | CaobaRD</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Guía completa de maderas para muebles en República Dominicana: caoba, cedro, roble, roble africano, saman y MDF. Características, usos y precios.">
+  <meta name="keywords" content="tipos de madera República Dominicana, madera caoba precio, cedro vs roble, saman algarrobo RD, MDF muebles">
+  <link rel="canonical" href="https://caobard.com/maderas.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tipos de Madera | CaobaRD — Guía Completa">
+  <meta property="og:description" content="Todo lo que necesitas saber sobre caoba, cedro, roble, saman y MDF para elegir la madera perfecta de tu próximo mueble.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caobard.com/maderas.html">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            caoba:   '#8B4513',
+            cedro:   '#A0522D',
+            saman:   '#C4A882',
+            crema:   '#FAF7F2',
+            tinta:   '#1C1008',
+            dorado:  '#C9A84C',
+            'caoba-dark': '#5C2E0C',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #FAF7F2;
+      color: #1C1008;
+      font-family: 'Inter', sans-serif;
+      background-image: radial-gradient(circle at 1px 1px, rgba(139,69,19,0.035) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slowZoom {
+      from { transform: scale(1.08); }
+      to   { transform: scale(1); }
+    }
+    .fade-up   { animation: fadeUp 1s cubic-bezier(.22,1,.36,1) both; }
+    .slow-zoom { animation: slowZoom 8s ease-out both; }
+    .delay-1 { animation-delay: .15s; }
+    .delay-2 { animation-delay: .3s; }
+    .delay-3 { animation-delay: .45s; }
+
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity .9s ease, transform .9s cubic-bezier(.22,1,.36,1); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: '';
+      position: absolute; left: 0; bottom: -6px;
+      width: 0; height: 2px; background: #8B4513;
+      transition: width .3s ease;
+    }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+    .btn-caoba {
+      background: #8B4513;
+      color: #FAF7F2;
+      transition: all .3s ease;
+      box-shadow: 0 4px 14px rgba(139,69,19,.25);
+    }
+    .btn-caoba:hover {
+      background: #5C2E0C;
+      box-shadow: 0 10px 30px rgba(139,69,19,.45);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      border: 1.5px solid #FAF7F2;
+      color: #FAF7F2;
+      background: transparent;
+      transition: all .3s ease;
+    }
+    .btn-outline:hover {
+      background: #FAF7F2;
+      color: #1C1008;
+      transform: translateY(-2px);
+    }
+
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(28,16,8,.45) 0%, rgba(28,16,8,.6) 60%, rgba(28,16,8,.85) 100%);
+    }
+
+    @keyframes pulseRing {
+      0%   { box-shadow: 0 0 0 0 rgba(37,211,102,.55); }
+      70%  { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+    .wa-float { animation: pulseRing 2s infinite; }
+
+    .divider-diamond { display: flex; align-items: center; gap: 1rem; color: #C9A84C; }
+    .divider-diamond::before, .divider-diamond::after {
+      content: ''; flex: 1; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,.6), transparent);
+    }
+
+    /* Card de madera con efecto hover y badge de precio */
+    .wood-card {
+      transition: all .4s cubic-bezier(.22,1,.36,1);
+    }
+    .wood-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(139,69,19,.18);
+    }
+    .wood-card img { transition: transform .8s cubic-bezier(.22,1,.36,1); }
+    .wood-card:hover img { transform: scale(1.08); }
+
+    /* Badge de precio (símbolos $) */
+    .price-badge {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      letter-spacing: .05em;
+    }
+    .price-filled { color: #8B4513; }
+    .price-empty  { color: rgba(139,69,19,.25); }
+
+    /* Muestra de color de madera con textura */
+    .wood-swatch {
+      position: relative;
+      overflow: hidden;
+    }
+    .wood-swatch::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(90deg, transparent, transparent 8px, rgba(0,0,0,.06) 8px, rgba(0,0,0,.06) 9px);
+      pointer-events: none;
+    }
+
+    /* Feature list (características) */
+    .feature-check {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: #8B4513;
+      color: #FAF7F2;
+      display: inline-flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Tabla comparativa */
+    .comp-table {
+      background: #FAF7F2;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(139,69,19,.08);
+    }
+    .comp-table thead {
+      background: #5C2E0C;
+      color: #FAF7F2;
+    }
+    .comp-table th, .comp-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(139,69,19,.1);
+    }
+    .comp-table tbody tr:hover {
+      background: rgba(196,168,130,.1);
+    }
+    .comp-table tbody tr:last-child td { border-bottom: none; }
+    .comp-table th { font-family: 'Playfair Display', serif; font-weight: 600; font-size: .875rem; letter-spacing: .05em; }
+
+    .mobile-menu { transform: translateX(100%); transition: transform .4s cubic-bezier(.22,1,.36,1); }
+    .mobile-menu.open { transform: translateX(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <!-- NAVEGACIÓN -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-crema/90 border-b border-caoba/10 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="transition-transform group-hover:rotate-6">
+          <path d="M16 3 L28 10 L28 22 L16 29 L4 22 L4 10 Z" stroke="#8B4513" stroke-width="1.5" fill="#C9A84C" fill-opacity=".15"/>
+          <path d="M16 3 L16 29 M4 10 L28 22 M28 10 L4 22" stroke="#8B4513" stroke-width="1"/>
+        </svg>
+        <span class="font-display text-2xl font-bold tracking-tight text-tinta">Caoba<span class="text-caoba">RD</span></span>
+      </a>
+
+      <ul class="hidden xl:flex items-center gap-7 text-sm font-medium text-tinta/80">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="muebles.html" class="nav-link">Muebles</a></li>
+        <li><a href="cocinas-banos.html" class="nav-link">Cocinas y Baños</a></li>
+        <li><a href="puertas-armarios.html" class="nav-link">Puertas y Armarios</a></li>
+        <li><a href="maderas.html" class="nav-link active">Maderas</a></li>
+        <li><a href="portafolio.html" class="nav-link">Portafolio</a></li>
+        <li><a href="inspiracion.html" class="nav-link">Inspiración</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20necesito%20ayuda%20eligiendo%20la%20madera%20correcta"
+         target="_blank"
+         class="hidden xl:inline-flex btn-caoba ml-6 px-5 py-2.5 rounded-full text-sm font-semibold items-center gap-2 whitespace-nowrap">
+        Solicitar Presupuesto
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button id="menuToggle" class="xl:hidden p-2 text-tinta" aria-label="Abrir menú">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </nav>
+
+    <div id="menuOverlay" class="xl:hidden fixed inset-0 bg-tinta/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <div id="mobileMenu" class="mobile-menu xl:hidden fixed inset-y-0 right-0 w-80 max-w-[85vw] bg-crema shadow-2xl z-50 flex flex-col">
+      <div class="bg-caoba-dark px-8 py-6 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 3 L28 10 L28 22 L16 29 L4 22 L4 10 Z" stroke="#C9A84C" stroke-width="1.5" fill="#C9A84C" fill-opacity=".15"/><path d="M16 3 L16 29 M4 10 L28 22 M28 10 L4 22" stroke="#C9A84C" stroke-width="1"/></svg>
+          <span class="font-display text-xl font-bold text-crema">Caoba<span class="text-dorado">RD</span></span>
+        </div>
+        <button id="menuClose" class="p-2 text-crema hover:text-dorado transition-colors" aria-label="Cerrar menú"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M6 18L18 6"/></svg></button>
+      </div>
+      <nav class="flex-1 px-8 py-8 overflow-y-auto">
+        <ul class="flex flex-col gap-1 font-display text-tinta">
+          <li><a href="index.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Inicio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="muebles.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Muebles a Medida <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="cocinas-banos.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Cocinas y Baños <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="puertas-armarios.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Puertas y Armarios <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="maderas.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 text-caoba font-semibold">Maderas <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="portafolio.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Portafolio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="inspiracion.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Inspiración <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="contacto.html" class="flex items-center justify-between py-4 text-xl hover:text-caoba transition-colors">Contacto <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+        </ul>
+      </nav>
+      <div class="px-8 pb-8 pt-4 border-t border-caoba/10 bg-crema">
+        <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20solicitar%20un%20presupuesto" target="_blank" class="btn-caoba flex items-center justify-center gap-2 px-5 py-4 rounded-full text-center font-semibold">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar Presupuesto
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative h-[65vh] min-h-[500px] overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1520637736862-4d197d17c55a?w=1920&q=80"
+         alt="Maderas nobles CaobaRD"
+         class="absolute inset-0 w-full h-full object-cover slow-zoom">
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 h-full flex flex-col justify-end pb-16 lg:pb-20">
+      <div class="fade-up flex items-center gap-2 text-xs text-crema/70 tracking-widest uppercase mb-5">
+        <a href="index.html" class="hover:text-dorado transition-colors">Inicio</a>
+        <span>/</span>
+        <span class="text-dorado">Maderas</span>
+      </div>
+
+      <div class="fade-up delay-1 inline-flex items-center gap-3 mb-5 w-fit">
+        <span class="w-10 h-px bg-dorado"></span>
+        <span class="text-dorado text-xs tracking-[.3em] uppercase font-medium">Guía completa</span>
+      </div>
+
+      <h1 class="fade-up delay-2 font-display text-[2.5rem] sm:text-5xl lg:text-7xl font-bold text-crema leading-[1.08] max-w-4xl">
+        Elige la <span class="italic text-dorado">madera perfecta</span><br>
+        para tu próximo proyecto.<br>
+        <span class="text-xl sm:text-2xl lg:text-3xl font-normal italic text-crema/85">Seis opciones nobles. Cada una, una historia.</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- INTRO EDUCATIVA -->
+  <section class="py-20 lg:py-24 bg-crema">
+    <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center reveal">
+      <div class="inline-flex items-center gap-3 mb-6">
+        <span class="w-10 h-px bg-caoba"></span>
+        <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Antes de elegir</span>
+        <span class="w-10 h-px bg-caoba"></span>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-tinta leading-tight mb-6">
+        La madera no es solo madera.<br>
+        <span class="italic text-caoba">Es una decisión que vive décadas.</span>
+      </h2>
+      <p class="text-tinta/75 text-lg leading-relaxed mb-5">
+        Una mesa de comedor de caoba maciza y una de MDF laminado pueden verse parecidas el primer año. A los cinco, a los diez, a los veinte — la diferencia es abismal.
+      </p>
+      <p class="text-tinta/75 text-lg leading-relaxed">
+        Aquí te explicamos las seis opciones que trabajamos, con honestidad: cuál es dura, cuál es fragante, cuál es cara, cuál vale para qué. Así eliges con criterio, no con fe.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- 6 MADERAS - GRID PRINCIPAL                    -->
+  <!-- ============================================= -->
+  <section class="py-16 lg:py-20 bg-saman/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+        <!-- ========== CAOBA ========== -->
+        <div class="wood-card bg-crema rounded-2xl overflow-hidden shadow-md border border-caoba/10 reveal flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden wood-swatch" style="background: linear-gradient(135deg, #8B4513, #5C2E0C);">
+            <img src="https://images.unsplash.com/photo-1520637736862-4d197d17c55a?w=800&q=80" alt="Madera de caoba" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90">
+            <!-- Badge premium -->
+            <div class="absolute top-4 left-4 bg-dorado/95 text-tinta text-[10px] tracking-[.2em] uppercase font-bold px-3 py-1.5 rounded-full">★ Premium</div>
+            <!-- Precio -->
+            <div class="absolute top-4 right-4 bg-crema/95 backdrop-blur-sm rounded-full px-3 py-1.5 price-badge text-sm">
+              <span class="price-filled">$$$</span>
+            </div>
+          </div>
+          <div class="p-6 lg:p-7 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-5 h-5 rounded-full" style="background:#8B4513"></span>
+              <h3 class="font-display text-2xl font-bold text-tinta">Caoba</h3>
+            </div>
+            <p class="text-tinta/70 text-sm italic mb-4">La reina dominicana</p>
+            <p class="text-tinta/75 text-sm leading-relaxed mb-5">Madera roja-oscura con vetas finas y brillo natural. Dura como pocas, resistente a la humedad y los insectos. Es la madera con la que se hacen los mejores muebles del país.</p>
+            <ul class="space-y-2.5 text-sm text-tinta/80 mb-6">
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Dureza alta, larga vida útil</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Resistente a humedad y hongos</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Brillo natural elegante</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Ideal para muebles finos y puertas</li>
+            </ul>
+            <div class="mt-auto pt-5 border-t border-caoba/10">
+              <p class="text-xs text-tinta/60 mb-3"><strong class="text-caoba">Mejor para:</strong> Mesas de comedor, puertas principales, bibliotecas, muebles de sala.</p>
+              <a href="https://wa.me/18091234567?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20en%20caoba" target="_blank" class="text-caoba text-sm font-semibold hover:text-caoba-dark transition-colors inline-flex items-center gap-2">
+                Usar esta madera
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== CEDRO ========== -->
+        <div class="wood-card bg-crema rounded-2xl overflow-hidden shadow-md border border-caoba/10 reveal flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden wood-swatch" style="background: linear-gradient(135deg, #A0522D, #8B4513);">
+            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&q=80" alt="Madera de cedro" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90">
+            <div class="absolute top-4 right-4 bg-crema/95 backdrop-blur-sm rounded-full px-3 py-1.5 price-badge text-sm">
+              <span class="price-filled">$$</span><span class="price-empty">$</span>
+            </div>
+          </div>
+          <div class="p-6 lg:p-7 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-5 h-5 rounded-full" style="background:#A0522D"></span>
+              <h3 class="font-display text-2xl font-bold text-tinta">Cedro</h3>
+            </div>
+            <p class="text-tinta/70 text-sm italic mb-4">El noble fragante</p>
+            <p class="text-tinta/75 text-sm leading-relaxed mb-5">Liviana, fácil de trabajar, con un aroma inconfundible que repele polillas de forma natural. Ha sido la madera preferida para armarios en Latinoamérica desde hace siglos.</p>
+            <ul class="space-y-2.5 text-sm text-tinta/80 mb-6">
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Repele insectos naturalmente</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Aroma agradable y duradero</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Liviano pero resistente</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Relación calidad-precio excelente</li>
+            </ul>
+            <div class="mt-auto pt-5 border-t border-caoba/10">
+              <p class="text-xs text-tinta/60 mb-3"><strong class="text-caoba">Mejor para:</strong> Armarios, vestidores, camas, muebles de dormitorio.</p>
+              <a href="https://wa.me/18091234567?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20en%20cedro" target="_blank" class="text-caoba text-sm font-semibold hover:text-caoba-dark transition-colors inline-flex items-center gap-2">
+                Usar esta madera
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== ROBLE ========== -->
+        <div class="wood-card bg-crema rounded-2xl overflow-hidden shadow-md border border-caoba/10 reveal flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden wood-swatch" style="background: linear-gradient(135deg, #8B6914, #6B5010);">
+            <img src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?w=800&q=80" alt="Madera de roble" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90">
+            <div class="absolute top-4 right-4 bg-crema/95 backdrop-blur-sm rounded-full px-3 py-1.5 price-badge text-sm">
+              <span class="price-filled">$$$</span>
+            </div>
+          </div>
+          <div class="p-6 lg:p-7 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-5 h-5 rounded-full" style="background:#8B6914"></span>
+              <h3 class="font-display text-2xl font-bold text-tinta">Roble</h3>
+            </div>
+            <p class="text-tinta/70 text-sm italic mb-4">El clásico europeo</p>
+            <p class="text-tinta/75 text-sm leading-relaxed mb-5">Veta pronunciada que casi se puede leer como un mapa. Durísimo, resistente al desgaste. Es la madera con la que se hacen los mejores pisos y mesas de bar del mundo.</p>
+            <ul class="space-y-2.5 text-sm text-tinta/80 mb-6">
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Muy duro, resistente al desgaste</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Veta espectacular y única</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Ideal para piezas de alto uso</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Acepta bien distintos tintes</li>
+            </ul>
+            <div class="mt-auto pt-5 border-t border-caoba/10">
+              <p class="text-xs text-tinta/60 mb-3"><strong class="text-caoba">Mejor para:</strong> Topes de cocina, pisos, mesas, escritorios de uso intenso.</p>
+              <a href="https://wa.me/18091234567?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20en%20roble" target="_blank" class="text-caoba text-sm font-semibold hover:text-caoba-dark transition-colors inline-flex items-center gap-2">
+                Usar esta madera
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== ROBLE AFRICANO ========== -->
+        <div class="wood-card bg-crema rounded-2xl overflow-hidden shadow-md border border-caoba/10 reveal flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden wood-swatch" style="background: linear-gradient(135deg, #6B4423, #4A2E18);">
+            <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80" alt="Madera de roble africano" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90">
+            <div class="absolute top-4 left-4 bg-tinta/90 text-dorado text-[10px] tracking-[.2em] uppercase font-bold px-3 py-1.5 rounded-full">Exótica</div>
+            <div class="absolute top-4 right-4 bg-crema/95 backdrop-blur-sm rounded-full px-3 py-1.5 price-badge text-sm">
+              <span class="price-filled">$$$$</span>
+            </div>
+          </div>
+          <div class="p-6 lg:p-7 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-5 h-5 rounded-full" style="background:#6B4423"></span>
+              <h3 class="font-display text-2xl font-bold text-tinta">Roble Africano</h3>
+            </div>
+            <p class="text-tinta/70 text-sm italic mb-4">La exótica indestructible</p>
+            <p class="text-tinta/75 text-sm leading-relaxed mb-5">Madera importada de alta densidad con veta irregular única — ninguna pieza es igual a otra. Es casi imposible rayarla. Para quien quiere algo verdaderamente diferente.</p>
+            <ul class="space-y-2.5 text-sm text-tinta/80 mb-6">
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Densidad extrema, casi indestructible</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Veta irregular exótica</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Excelente para zonas húmedas</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Piezas únicas e irrepetibles</li>
+            </ul>
+            <div class="mt-auto pt-5 border-t border-caoba/10">
+              <p class="text-xs text-tinta/60 mb-3"><strong class="text-caoba">Mejor para:</strong> Piezas statement, baños de lujo, cocinas premium, pisos exteriores.</p>
+              <a href="https://wa.me/18091234567?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20en%20roble%20africano" target="_blank" class="text-caoba text-sm font-semibold hover:text-caoba-dark transition-colors inline-flex items-center gap-2">
+                Usar esta madera
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== SAMAN / ALGARROBO ========== -->
+        <div class="wood-card bg-crema rounded-2xl overflow-hidden shadow-md border border-caoba/10 reveal flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden wood-swatch" style="background: linear-gradient(135deg, #C4A882, #9B8760);">
+            <img src="https://images.unsplash.com/photo-1611145434336-2324aa4079ce?w=800&q=80" alt="Madera de saman" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90">
+            <div class="absolute top-4 left-4 bg-dorado/95 text-tinta text-[10px] tracking-[.2em] uppercase font-bold px-3 py-1.5 rounded-full">🇩🇴 Icónica</div>
+            <div class="absolute top-4 right-4 bg-crema/95 backdrop-blur-sm rounded-full px-3 py-1.5 price-badge text-sm">
+              <span class="price-filled">$$$$</span>
+            </div>
+          </div>
+          <div class="p-6 lg:p-7 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-5 h-5 rounded-full" style="background:#C4A882"></span>
+              <h3 class="font-display text-2xl font-bold text-tinta">Saman (Algarrobo)</h3>
+            </div>
+            <p class="text-tinta/70 text-sm italic mb-4">El gigante caribeño</p>
+            <p class="text-tinta/75 text-sm leading-relaxed mb-5">Árbol icónico dominicano. Sus troncos son tan enormes que permiten mesas de una sola pieza de 3 metros. La veta es dramática, cada mueble es una obra de arte natural.</p>
+            <ul class="space-y-2.5 text-sm text-tinta/80 mb-6">
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Piezas enormes sin uniones</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Veta natural espectacular</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Color cálido beige-dorado</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Estilo rústico-premium</li>
+            </ul>
+            <div class="mt-auto pt-5 border-t border-caoba/10">
+              <p class="text-xs text-tinta/60 mb-3"><strong class="text-caoba">Mejor para:</strong> Mesas de comedor grandes, topes, islas de cocina, consolas statement.</p>
+              <a href="https://wa.me/18091234567?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20en%20saman" target="_blank" class="text-caoba text-sm font-semibold hover:text-caoba-dark transition-colors inline-flex items-center gap-2">
+                Usar esta madera
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== MDF ========== -->
+        <div class="wood-card bg-crema rounded-2xl overflow-hidden shadow-md border border-caoba/10 reveal flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden wood-swatch" style="background: linear-gradient(135deg, #D2B48C, #B59A75);">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&q=80" alt="MDF" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-85">
+            <div class="absolute top-4 left-4 bg-tinta/80 text-crema text-[10px] tracking-[.2em] uppercase font-bold px-3 py-1.5 rounded-full">Económica</div>
+            <div class="absolute top-4 right-4 bg-crema/95 backdrop-blur-sm rounded-full px-3 py-1.5 price-badge text-sm">
+              <span class="price-filled">$</span><span class="price-empty">$$</span>
+            </div>
+          </div>
+          <div class="p-6 lg:p-7 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-5 h-5 rounded-full" style="background:#D2B48C"></span>
+              <h3 class="font-display text-2xl font-bold text-tinta">MDF</h3>
+            </div>
+            <p class="text-tinta/70 text-sm italic mb-4">La versátil inteligente</p>
+            <p class="text-tinta/75 text-sm leading-relaxed mb-5">No es madera maciza — son fibras de madera compactadas con resinas. Superficie lisa perfecta para lacas y pinturas. No para zonas húmedas, pero ideal donde quieres color y bajo costo.</p>
+            <ul class="space-y-2.5 text-sm text-tinta/80 mb-6">
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Superficie ultra-lisa para pintar</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Opción más económica</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Dimensionalmente estable</li>
+              <li class="flex items-start gap-2.5"><span class="feature-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Fácil de trabajar en formas curvas</li>
+            </ul>
+            <div class="mt-auto pt-5 border-t border-caoba/10">
+              <p class="text-xs text-tinta/60 mb-3"><strong class="text-caoba">Mejor para:</strong> Gabinetes lacados, cuartos de niños, muebles lineales económicos. <em>No para baños ni zonas húmedas.</em></p>
+              <a href="https://wa.me/18091234567?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20en%20MDF" target="_blank" class="text-caoba text-sm font-semibold hover:text-caoba-dark transition-colors inline-flex items-center gap-2">
+                Usar esta madera
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- TABLA COMPARATIVA                             -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-crema">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-12 reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-caoba"></span>
+          <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Comparativa rápida</span>
+          <span class="w-10 h-px bg-caoba"></span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-tinta mb-4">Todas en una sola mirada</h2>
+        <p class="text-tinta/70 text-lg max-w-2xl mx-auto">Para quien prefiere los datos antes que los adjetivos.</p>
+      </div>
+
+      <!-- Tabla responsive con scroll horizontal en móvil -->
+      <div class="reveal overflow-x-auto -mx-6 lg:mx-0">
+        <div class="px-6 lg:px-0 min-w-[720px]">
+          <table class="comp-table w-full text-sm">
+            <thead>
+              <tr>
+                <th>Madera</th>
+                <th>Dureza</th>
+                <th>Humedad</th>
+                <th>Precio</th>
+                <th>Mejor uso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-semibold text-caoba">🟫 Caoba</td>
+                <td>★★★★☆</td>
+                <td>Excelente</td>
+                <td class="price-badge"><span class="price-filled">$$$</span></td>
+                <td class="text-tinta/75">Muebles finos, puertas</td>
+              </tr>
+              <tr>
+                <td class="font-semibold text-caoba">🟫 Cedro</td>
+                <td>★★★☆☆</td>
+                <td>Buena</td>
+                <td class="price-badge"><span class="price-filled">$$</span></td>
+                <td class="text-tinta/75">Armarios, vestidores</td>
+              </tr>
+              <tr>
+                <td class="font-semibold text-caoba">🟫 Roble</td>
+                <td>★★★★★</td>
+                <td>Buena (con tratamiento)</td>
+                <td class="price-badge"><span class="price-filled">$$$</span></td>
+                <td class="text-tinta/75">Topes, pisos, mesas</td>
+              </tr>
+              <tr>
+                <td class="font-semibold text-caoba">🟫 Roble Africano</td>
+                <td>★★★★★</td>
+                <td>Excelente</td>
+                <td class="price-badge"><span class="price-filled">$$$$</span></td>
+                <td class="text-tinta/75">Baños lujo, zonas húmedas</td>
+              </tr>
+              <tr>
+                <td class="font-semibold text-caoba">🟫 Saman</td>
+                <td>★★★★☆</td>
+                <td>Buena</td>
+                <td class="price-badge"><span class="price-filled">$$$$</span></td>
+                <td class="text-tinta/75">Mesas statement, islas</td>
+              </tr>
+              <tr>
+                <td class="font-semibold text-caoba">🟫 MDF</td>
+                <td>★★☆☆☆</td>
+                <td class="text-red-700/80">Mala (no humedad)</td>
+                <td class="price-badge"><span class="price-filled">$</span></td>
+                <td class="text-tinta/75">Gabinetes lacados, niños</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <p class="text-xs text-tinta/55 italic mt-4 text-center">Escala de precios relativa. Dureza basada en la escala Janka aproximada.</p>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- COMO ELEGIR - GUIA                            -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-tinta text-crema relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10"
+         style="background-image: repeating-linear-gradient(45deg, transparent, transparent 60px, rgba(201,168,76,.3) 60px, rgba(201,168,76,.3) 61px);"></div>
+    <div class="absolute -top-20 -right-20 w-96 h-96 bg-caoba/40 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-14 reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-dorado"></span>
+          <span class="text-dorado text-xs tracking-[.3em] uppercase font-semibold">Cómo elegir</span>
+          <span class="w-10 h-px bg-dorado"></span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Guía rápida en 3 preguntas</h2>
+        <p class="text-crema/70 text-lg max-w-2xl mx-auto">Si no sabes por dónde empezar, responde esto.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-crema/5 backdrop-blur-sm border border-crema/10 rounded-2xl p-8 reveal hover:border-dorado/40 transition-all">
+          <div class="font-display text-5xl font-bold text-dorado mb-4">1.</div>
+          <h3 class="font-display text-xl font-bold mb-3">¿Hay humedad?</h3>
+          <p class="text-crema/75 text-sm leading-relaxed mb-4">Baños, cocinas, exteriores, zonas costeras.</p>
+          <div class="pt-4 border-t border-crema/10">
+            <p class="text-xs text-dorado font-semibold mb-1">Recomendado:</p>
+            <p class="text-sm text-crema/90">Caoba, Cedro o Roble Africano. <strong>Nunca MDF.</strong></p>
+          </div>
+        </div>
+
+        <div class="bg-crema/5 backdrop-blur-sm border border-crema/10 rounded-2xl p-8 reveal hover:border-dorado/40 transition-all">
+          <div class="font-display text-5xl font-bold text-dorado mb-4">2.</div>
+          <h3 class="font-display text-xl font-bold mb-3">¿Presupuesto ajustado?</h3>
+          <p class="text-crema/75 text-sm leading-relaxed mb-4">Quieres algo bonito sin gastar una fortuna.</p>
+          <div class="pt-4 border-t border-crema/10">
+            <p class="text-xs text-dorado font-semibold mb-1">Recomendado:</p>
+            <p class="text-sm text-crema/90">Cedro para madera real, MDF para piezas lacadas.</p>
+          </div>
+        </div>
+
+        <div class="bg-crema/5 backdrop-blur-sm border border-crema/10 rounded-2xl p-8 reveal hover:border-dorado/40 transition-all">
+          <div class="font-display text-5xl font-bold text-dorado mb-4">3.</div>
+          <h3 class="font-display text-xl font-bold mb-3">¿Es pieza statement?</h3>
+          <p class="text-crema/75 text-sm leading-relaxed mb-4">Una mesa central, puerta principal, isla de cocina.</p>
+          <div class="pt-4 border-t border-crema/10">
+            <p class="text-xs text-dorado font-semibold mb-1">Recomendado:</p>
+            <p class="text-sm text-crema/90">Saman o Roble Africano. Piezas únicas, que se lucen.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-crema/60 italic text-sm mt-10 max-w-xl mx-auto reveal">
+        ¿Sigues con dudas? Es normal. <span class="text-dorado">Escríbenos con tu proyecto</span> y te asesoramos sin costo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- NOTA SOBRE SOSTENIBILIDAD                     -->
+  <!-- ============================================= -->
+  <section class="py-20 lg:py-24 bg-crema">
+    <div class="max-w-4xl mx-auto px-6 lg:px-10 reveal">
+      <div class="bg-gradient-to-br from-saman/20 to-crema border-l-4 border-caoba rounded-r-2xl p-8 lg:p-10">
+        <div class="flex items-start gap-5">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="1.5" class="flex-shrink-0">
+            <path d="M12 2l3 6 6 .5-4.5 4 1.5 6.5L12 15l-6 4 1.5-6.5L3 8.5 9 8z" opacity=".3"/>
+            <path d="M17 8c2.5 0 5-2 5-2s-.5 3-3 5M7 8c-2.5 0-5-2-5-2s.5 3 3 5M12 2v20"/>
+          </svg>
+          <div>
+            <h3 class="font-display text-2xl font-bold text-tinta mb-3">Madera responsable</h3>
+            <p class="text-tinta/75 leading-relaxed mb-3">
+              Trabajamos con proveedores locales que manejan tala controlada y reforestación. No usamos maderas en peligro ni de origen dudoso.
+            </p>
+            <p class="text-tinta/75 leading-relaxed">
+              La caoba y el saman que usamos son parte de la tradición maderera dominicana — se cultivan, se cosechan y se reponen. Tu mueble es parte de ese ciclo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- CTA FINAL                                     -->
+  <!-- ============================================= -->
+  <section class="py-20 lg:py-28 bg-caoba-dark relative overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-96 h-96 bg-caoba/40 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-dorado/15 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-4xl mx-auto px-6 lg:px-10 text-center reveal">
+      <div class="divider-diamond mb-8">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="#C9A84C"><rect x="5" y="0" width="5" height="5" transform="rotate(45 5 5)"/></svg>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-6xl font-bold text-crema leading-tight mb-6">
+        ¿Todavía no sabes<br>
+        <span class="italic text-dorado">qué madera elegir?</span>
+      </h2>
+      <p class="text-crema/75 text-base sm:text-lg max-w-xl mx-auto mb-10">
+        Escríbenos tu proyecto. Te recomendamos la madera ideal, sin cobrarte por la asesoría.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20necesito%20ayuda%20eligiendo%20la%20madera%20para%20mi%20proyecto"
+           target="_blank"
+           class="btn-caoba px-6 sm:px-8 py-4 rounded-full font-semibold text-base inline-flex items-center justify-center gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Asesoría Gratis
+        </a>
+        <a href="portafolio.html" class="btn-outline px-6 sm:px-8 py-4 rounded-full font-semibold text-base inline-flex items-center justify-center gap-3">
+          Ver Portafolio
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-caoba-dark text-crema/80 pt-20 pb-10 border-t border-crema/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+        <div>
+          <a href="index.html" class="flex items-center gap-2 mb-5">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 3 L28 10 L28 22 L16 29 L4 22 L4 10 Z" stroke="#C9A84C" stroke-width="1.5" fill="#C9A84C" fill-opacity=".15"/><path d="M16 3 L16 29 M4 10 L28 22 M28 10 L4 22" stroke="#C9A84C" stroke-width="1"/></svg>
+            <span class="font-display text-2xl font-bold text-crema">Caoba<span class="text-dorado">RD</span></span>
+          </a>
+          <p class="text-sm leading-relaxed mb-5">Muebles personalizados en madera premium. Servicio en toda la República Dominicana 🇩🇴</p>
+          <div class="flex gap-3">
+            <a href="#" aria-label="Pinterest" class="w-9 h-9 rounded-full border border-crema/20 flex items-center justify-center hover:bg-dorado hover:text-tinta hover:border-dorado transition-all"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 00-4.373 23.17c-.103-.985-.196-2.502.041-3.579.213-.973 1.379-6.197 1.379-6.197s-.352-.705-.352-1.747c0-1.638.95-2.86 2.132-2.86 1.005 0 1.491.754 1.491 1.659 0 1.01-.644 2.52-.976 3.918-.278 1.171.588 2.126 1.744 2.126 2.092 0 3.702-2.207 3.702-5.39 0-2.818-2.025-4.788-4.917-4.788-3.349 0-5.314 2.511-5.314 5.106 0 1.012.39 2.095.877 2.685.097.117.11.22.082.339l-.329 1.342c-.053.218-.172.265-.397.16-1.48-.69-2.405-2.854-2.405-4.593 0-3.74 2.717-7.177 7.83-7.177 4.111 0 7.306 2.929 7.306 6.844 0 4.084-2.575 7.37-6.15 7.37-1.2 0-2.328-.624-2.714-1.361l-.738 2.813c-.267 1.028-.987 2.316-1.47 3.103A12 12 0 1012 0z"/></svg></a>
+            <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full border border-crema/20 flex items-center justify-center hover:bg-dorado hover:text-tinta hover:border-dorado transition-all"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" aria-label="TikTok" class="w-9 h-9 rounded-full border border-crema/20 flex items-center justify-center hover:bg-dorado hover:text-tinta hover:border-dorado transition-all"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005.8 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.84-.1z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-display text-lg font-bold text-dorado mb-5">Servicios</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="muebles.html" class="hover:text-dorado transition-colors">Muebles a Medida</a></li>
+            <li><a href="cocinas-banos.html" class="hover:text-dorado transition-colors">Cocinas y Baños</a></li>
+            <li><a href="puertas-armarios.html" class="hover:text-dorado transition-colors">Puertas y Armarios</a></li>
+            <li><a href="maderas.html" class="hover:text-dorado transition-colors">Tipos de Madera</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display text-lg font-bold text-dorado mb-5">Empresa</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="portafolio.html" class="hover:text-dorado transition-colors">Portafolio</a></li>
+            <li><a href="inspiracion.html" class="hover:text-dorado transition-colors">Inspiración</a></li>
+            <li><a href="contacto.html" class="hover:text-dorado transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display text-lg font-bold text-dorado mb-5">Contáctanos</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>República Dominicana 🇩🇴<br><span class="text-dorado/80 text-xs">Servicio en todo el país</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              +1 (809) 123-4567
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              info@caobard.com
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-crema/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-crema/50">
+        <p>© 2026 CaobaRD. Todos los derechos reservados.</p>
+        <p>Hecho con <span class="text-dorado">♦</span> en República Dominicana 🇩🇴</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20necesito%20ayuda%20eligiendo%20la%20madera"
+     target="_blank"
+     aria-label="Contactar por WhatsApp"
+     class="wa-float fixed bottom-6 right-6 z-[9999] w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe5a] text-white flex items-center justify-center shadow-2xl transition-all hover:scale-110">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    const menuToggle  = document.getElementById('menuToggle');
+    const menuClose   = document.getElementById('menuClose');
+    const mobileMenu  = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      menuOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      menuOverlay.classList.add('opacity-100');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      menuOverlay.classList.add('opacity-0', 'pointer-events-none');
+      menuOverlay.classList.remove('opacity-100');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle .addEventListener('click', openMenu);
+    menuClose  .addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+  <!--
+  =========================================================
+  📝 CÓMO PERSONALIZAR maderas.html
+  =========================================================
+
+  1️⃣ IMÁGENES (Unsplash placeholders)
+     - 1 hero + 6 imágenes de cada madera = 7 imágenes
+     - Reemplaza URLs de unsplash.com con fotos reales de la madera que tienes
+
+  2️⃣ PRECIOS (símbolos $)
+     - La escala $ / $$ / $$$ / $$$$ es RELATIVA, no absoluta
+     - Si quieres ajustar, busca los bloques .price-badge
+
+  3️⃣ TABLA COMPARATIVA
+     - Las estrellas (★) y descripciones son aproximaciones educativas
+     - Ajusta los valores si tu experiencia dice otra cosa
+
+  4️⃣ SOSTENIBILIDAD
+     - El párrafo habla de proveedores responsables
+     - Si consigues certificaciones reales (FSC, etc.), menciónalas ahí
+
+  5️⃣ WHATSAPP: busca 18091234567, reemplaza
+  6️⃣ GA: busca G-XXXXXXXXXX, reemplaza
+
+  ✅ LISTO PARA PRODUCCIÓN desde el día 1
+  =========================================================
+  -->
+
+</body>
+</html>
