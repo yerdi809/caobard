@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocinas y Baños a Medida en Madera | CaobaRD — República Dominicana</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Cocinas y baños personalizados en madera premium — gabinetes, islas, topes, lavamanos. Diseño a medida. Servicio en toda República Dominicana.">
+  <meta name="keywords" content="cocinas a medida República Dominicana, gabinetes cocina madera, isla cocina RD, lavamanos madera, baño personalizado Santo Domingo">
+  <link rel="canonical" href="https://caobard.com/cocinas-banos.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cocinas y Baños a Medida en Madera | CaobaRD">
+  <meta property="og:description" content="Gabinetes, islas y topes en madera premium. Diseño 100% a medida. Servicio en toda República Dominicana.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caobard.com/cocinas-banos.html">
+
+  <!-- Google Analytics — REEMPLAZA G-XXXXXXXXXX con tu tag real -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            caoba:   '#8B4513',
+            cedro:   '#A0522D',
+            saman:   '#C4A882',
+            crema:   '#FAF7F2',
+            tinta:   '#1C1008',
+            dorado:  '#C9A84C',
+            'caoba-dark': '#5C2E0C',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #FAF7F2;
+      color: #1C1008;
+      font-family: 'Inter', sans-serif;
+      background-image: radial-gradient(circle at 1px 1px, rgba(139,69,19,0.035) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slowZoom {
+      from { transform: scale(1.08); }
+      to   { transform: scale(1); }
+    }
+    .fade-up   { animation: fadeUp 1s cubic-bezier(.22,1,.36,1) both; }
+    .slow-zoom { animation: slowZoom 8s ease-out both; }
+    .delay-1 { animation-delay: .15s; }
+    .delay-2 { animation-delay: .3s; }
+    .delay-3 { animation-delay: .45s; }
+
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity .9s ease, transform .9s cubic-bezier(.22,1,.36,1); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: '';
+      position: absolute; left: 0; bottom: -6px;
+      width: 0; height: 2px; background: #8B4513;
+      transition: width .3s ease;
+    }
+    .nav-link:hover::after { width: 100%; }
+    .nav-link.active::after { width: 100%; }
+
+    .btn-caoba {
+      background: #8B4513;
+      color: #FAF7F2;
+      transition: all .3s ease;
+      box-shadow: 0 4px 14px rgba(139,69,19,.25);
+    }
+    .btn-caoba:hover {
+      background: #5C2E0C;
+      box-shadow: 0 10px 30px rgba(139,69,19,.45);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      border: 1.5px solid #FAF7F2;
+      color: #FAF7F2;
+      background: transparent;
+      transition: all .3s ease;
+    }
+    .btn-outline:hover {
+      background: #FAF7F2;
+      color: #1C1008;
+      transform: translateY(-2px);
+    }
+
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(28,16,8,.45) 0%, rgba(28,16,8,.6) 60%, rgba(28,16,8,.85) 100%);
+    }
+
+    @keyframes pulseRing {
+      0%   { box-shadow: 0 0 0 0 rgba(37,211,102,.55); }
+      70%  { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+    .wa-float { animation: pulseRing 2s infinite; }
+
+    .divider-diamond { display: flex; align-items: center; gap: 1rem; color: #C9A84C; }
+    .divider-diamond::before, .divider-diamond::after {
+      content: ''; flex: 1; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,.6), transparent);
+    }
+
+    /* Tabs cocinas/baños */
+    .tab-btn {
+      transition: all .3s ease;
+      position: relative;
+    }
+    .tab-btn.active {
+      background: #8B4513;
+      color: #FAF7F2;
+    }
+
+    /* Tarjeta de elemento hover */
+    .element-card img { transition: transform .7s cubic-bezier(.22,1,.36,1); }
+    .element-card:hover img { transform: scale(1.06); }
+
+    /* Grandes números de stats */
+    .big-stat {
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      background: linear-gradient(180deg, #8B4513, #C9A84C);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .mobile-menu { transform: translateX(100%); transition: transform .4s cubic-bezier(.22,1,.36,1); }
+    .mobile-menu.open { transform: translateX(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <!-- ============================================= -->
+  <!-- NAVEGACIÓN                                    -->
+  <!-- ============================================= -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-crema/90 border-b border-caoba/10 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="transition-transform group-hover:rotate-6">
+          <path d="M16 3 L28 10 L28 22 L16 29 L4 22 L4 10 Z" stroke="#8B4513" stroke-width="1.5" fill="#C9A84C" fill-opacity=".15"/>
+          <path d="M16 3 L16 29 M4 10 L28 22 M28 10 L4 22" stroke="#8B4513" stroke-width="1"/>
+        </svg>
+        <span class="font-display text-2xl font-bold tracking-tight text-tinta">
+          Caoba<span class="text-caoba">RD</span>
+        </span>
+      </a>
+
+      <ul class="hidden xl:flex items-center gap-7 text-sm font-medium text-tinta/80">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="muebles.html" class="nav-link">Muebles</a></li>
+        <li><a href="cocinas-banos.html" class="nav-link active">Cocinas y Baños</a></li>
+        <li><a href="puertas-armarios.html" class="nav-link">Puertas y Armarios</a></li>
+        <li><a href="maderas.html" class="nav-link">Maderas</a></li>
+        <li><a href="portafolio.html" class="nav-link">Portafolio</a></li>
+        <li><a href="inspiracion.html" class="nav-link">Inspiración</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20cotizar%20una%20cocina%20o%20ba%C3%B1o"
+         target="_blank"
+         class="hidden xl:inline-flex btn-caoba ml-6 px-5 py-2.5 rounded-full text-sm font-semibold items-center gap-2 whitespace-nowrap">
+        Solicitar Presupuesto
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button id="menuToggle" class="xl:hidden p-2 text-tinta" aria-label="Abrir menú">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+    </nav>
+
+    <div id="menuOverlay" class="xl:hidden fixed inset-0 bg-tinta/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <div id="mobileMenu" class="mobile-menu xl:hidden fixed inset-y-0 right-0 w-80 max-w-[85vw] bg-crema shadow-2xl z-50 flex flex-col">
+      <div class="bg-caoba-dark px-8 py-6 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <path d="M16 3 L28 10 L28 22 L16 29 L4 22 L4 10 Z" stroke="#C9A84C" stroke-width="1.5" fill="#C9A84C" fill-opacity=".15"/>
+            <path d="M16 3 L16 29 M4 10 L28 22 M28 10 L4 22" stroke="#C9A84C" stroke-width="1"/>
+          </svg>
+          <span class="font-display text-xl font-bold text-crema">Caoba<span class="text-dorado">RD</span></span>
+        </div>
+        <button id="menuClose" class="p-2 text-crema hover:text-dorado transition-colors" aria-label="Cerrar menú">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M6 18L18 6"/></svg>
+        </button>
+      </div>
+      <nav class="flex-1 px-8 py-8 overflow-y-auto">
+        <ul class="flex flex-col gap-1 font-display text-tinta">
+          <li><a href="index.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Inicio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="muebles.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Muebles a Medida <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="cocinas-banos.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 text-caoba font-semibold">Cocinas y Baños <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="puertas-armarios.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Puertas y Armarios <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="maderas.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Maderas <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="portafolio.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Portafolio <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="inspiracion.html" class="flex items-center justify-between py-4 text-xl border-b border-caoba/10 hover:text-caoba transition-colors">Inspiración <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+          <li><a href="contacto.html" class="flex items-center justify-between py-4 text-xl hover:text-caoba transition-colors">Contacto <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-40"><path d="M9 18l6-6-6-6"/></svg></a></li>
+        </ul>
+      </nav>
+      <div class="px-8 pb-8 pt-4 border-t border-caoba/10 bg-crema">
+        <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20solicitar%20un%20presupuesto" target="_blank" class="btn-caoba flex items-center justify-center gap-2 px-5 py-4 rounded-full text-center font-semibold">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar Presupuesto
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================= -->
+  <!-- HERO                                          -->
+  <!-- ============================================= -->
+  <section class="relative h-[70vh] min-h-[520px] overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80"
+         alt="Cocina personalizada en madera CaobaRD"
+         class="absolute inset-0 w-full h-full object-cover slow-zoom">
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 h-full flex flex-col justify-end pb-16 lg:pb-20">
+      <div class="fade-up flex items-center gap-2 text-xs text-crema/70 tracking-widest uppercase mb-5">
+        <a href="index.html" class="hover:text-dorado transition-colors">Inicio</a>
+        <span>/</span>
+        <span class="text-dorado">Cocinas y Baños</span>
+      </div>
+
+      <div class="fade-up delay-1 inline-flex items-center gap-3 mb-5 w-fit">
+        <span class="w-10 h-px bg-dorado"></span>
+        <span class="text-dorado text-xs tracking-[.3em] uppercase font-medium">Servicio 02</span>
+      </div>
+
+      <h1 class="fade-up delay-2 font-display text-[2.5rem] sm:text-5xl lg:text-7xl font-bold text-crema leading-[1.08] max-w-4xl">
+        Cocinas y Baños<br>
+        <span class="italic text-dorado">hechos a ti.</span><br>
+        <span class="text-xl sm:text-2xl lg:text-3xl font-normal italic text-crema/85">Donde vive tu casa, la madera cuenta.</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- INTRODUCCIÓN con stats                        -->
+  <!-- ============================================= -->
+  <section class="py-20 lg:py-24 bg-crema">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="reveal">
+          <div class="inline-flex items-center gap-3 mb-6">
+            <span class="w-10 h-px bg-caoba"></span>
+            <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">El corazón de la casa</span>
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-tinta leading-tight mb-6">
+            La cocina no es un cuarto.<br>
+            <span class="italic text-caoba">Es donde pasa la vida.</span>
+          </h2>
+          <p class="text-tinta/75 text-lg leading-relaxed mb-5">
+            Los desayunos apurados, las cenas largas, las conversaciones que no terminan. Tu cocina ve todo eso. Merece estar hecha con la madera correcta, las medidas correctas, y un diseño que te sirva por 20 años.
+          </p>
+          <p class="text-tinta/75 text-lg leading-relaxed">
+            Lo mismo el baño — el primer lugar que tocas cada mañana, el último cada noche. Un gabinete de madera real lo convierte en un spa personal.
+          </p>
+        </div>
+
+        <!-- Stats visuales -->
+        <div class="grid grid-cols-2 gap-6 reveal">
+          <div class="bg-gradient-to-br from-saman/20 to-crema p-6 lg:p-8 rounded-2xl border border-caoba/10">
+            <div class="big-stat text-5xl lg:text-6xl mb-2">20+</div>
+            <div class="text-sm text-tinta/70 font-medium">Años de vida útil<br>de una cocina bien hecha</div>
+          </div>
+          <div class="bg-gradient-to-br from-saman/20 to-crema p-6 lg:p-8 rounded-2xl border border-caoba/10 mt-8">
+            <div class="big-stat text-5xl lg:text-6xl mb-2">100%</div>
+            <div class="text-sm text-tinta/70 font-medium">A medida<br>cada centímetro</div>
+          </div>
+          <div class="bg-gradient-to-br from-saman/20 to-crema p-6 lg:p-8 rounded-2xl border border-caoba/10">
+            <div class="big-stat text-5xl lg:text-6xl mb-2">6+</div>
+            <div class="text-sm text-tinta/70 font-medium">Maderas disponibles<br>para cocina y baño</div>
+          </div>
+          <div class="bg-gradient-to-br from-saman/20 to-crema p-6 lg:p-8 rounded-2xl border border-caoba/10 mt-8">
+            <div class="big-stat text-5xl lg:text-6xl mb-2">4–6</div>
+            <div class="text-sm text-tinta/70 font-medium">Semanas de fabricación<br>promedio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- COCINAS — elementos                           -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-saman/10 relative overflow-hidden">
+    <div class="absolute top-20 -right-40 w-96 h-96 bg-dorado/10 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-14 reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-caoba"></span>
+          <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Cocinas</span>
+          <span class="w-10 h-px bg-caoba"></span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-tinta mb-4">Todo lo que compone tu cocina</h2>
+        <p class="text-tinta/70 text-lg max-w-2xl mx-auto">Desde los gabinetes principales hasta la isla central. Cada elemento diseñado para encajar como pieza de orfebrería.</p>
+      </div>
+
+      <!-- Grid de elementos de cocina -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Gabinetes superiores e inferiores -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=800&q=80" alt="Gabinetes de cocina" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+            <div class="text-dorado text-[10px] tracking-[.3em] uppercase mb-2">01</div>
+            <h3 class="font-display text-2xl font-bold text-crema mb-2">Gabinetes</h3>
+            <p class="text-crema/80 text-sm leading-relaxed">Superiores, inferiores, columnas altas. Con herrajes de cierre suave y organización interna a medida.</p>
+          </div>
+        </div>
+
+        <!-- Islas de cocina -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80" alt="Isla de cocina" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+            <div class="text-dorado text-[10px] tracking-[.3em] uppercase mb-2">02</div>
+            <h3 class="font-display text-2xl font-bold text-crema mb-2">Islas centrales</h3>
+            <p class="text-crema/80 text-sm leading-relaxed">El alma de la cocina moderna. Con topes, almacenamiento doble cara y espacio para asientos.</p>
+          </div>
+        </div>
+
+        <!-- Topes y superficies -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=800&q=80" alt="Topes de madera" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+            <div class="text-dorado text-[10px] tracking-[.3em] uppercase mb-2">03</div>
+            <h3 class="font-display text-2xl font-bold text-crema mb-2">Topes de madera</h3>
+            <p class="text-crema/80 text-sm leading-relaxed">Superficies en saman o caoba tratados para contacto con alimentos. Cálidos, únicos, durables.</p>
+          </div>
+        </div>
+
+        <!-- Despensa -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1556909172-bd5315fb3d87?w=800&q=80" alt="Despensa de cocina" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+            <div class="text-dorado text-[10px] tracking-[.3em] uppercase mb-2">04</div>
+            <h3 class="font-display text-2xl font-bold text-crema mb-2">Despensa</h3>
+            <p class="text-crema/80 text-sm leading-relaxed">Pantry de piso a techo con bandejas extraíbles, organización modular y cierre suave.</p>
+          </div>
+        </div>
+
+        <!-- Desayunadores -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Desayunador" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+            <div class="text-dorado text-[10px] tracking-[.3em] uppercase mb-2">05</div>
+            <h3 class="font-display text-2xl font-bold text-crema mb-2">Desayunadores</h3>
+            <p class="text-crema/80 text-sm leading-relaxed">Barras integradas a la isla o mesa, con volado para taburetes. El café de la mañana merece su lugar.</p>
+          </div>
+        </div>
+
+        <!-- Cocina completa -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80" alt="Cocina completa" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+            <div class="text-dorado text-[10px] tracking-[.3em] uppercase mb-2">06</div>
+            <h3 class="font-display text-2xl font-bold text-crema mb-2">Cocina completa</h3>
+            <p class="text-crema/80 text-sm leading-relaxed">Proyecto integral: gabinetes, isla, despensa, topes. Un solo contacto, un solo presupuesto, un solo resultado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- BAÑOS — sección separada                      -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-crema relative overflow-hidden">
+    <div class="absolute bottom-20 -left-40 w-96 h-96 bg-caoba/5 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-14 reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-caoba"></span>
+          <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Baños</span>
+          <span class="w-10 h-px bg-caoba"></span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-tinta mb-4">Tu baño, tu refugio</h2>
+        <p class="text-tinta/70 text-lg max-w-2xl mx-auto">Ducha larga al final del día. Madera tratada que resiste la humedad y suma calidez al espacio más íntimo de la casa.</p>
+      </div>
+
+      <!-- Grid de elementos de baño -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+        <!-- Vanity con lavamanos -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Vanity con lavamanos" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+            <h3 class="font-display text-xl font-bold text-crema mb-1">Vanities</h3>
+            <p class="text-crema/75 text-xs leading-relaxed">Mueble con lavamanos integrado y almacenamiento inferior.</p>
+          </div>
+        </div>
+
+        <!-- Gabinetes de baño -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=600&q=80" alt="Gabinete de baño" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+            <h3 class="font-display text-xl font-bold text-crema mb-1">Gabinetes</h3>
+            <p class="text-crema/75 text-xs leading-relaxed">Auxiliares, altos, con espejo. Para toallas y esenciales.</p>
+          </div>
+        </div>
+
+        <!-- Repisas y nichos -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80" alt="Repisas de baño" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+            <h3 class="font-display text-xl font-bold text-crema mb-1">Repisas</h3>
+            <p class="text-crema/75 text-xs leading-relaxed">Nichos y estantes flotantes en madera tratada.</p>
+          </div>
+        </div>
+
+        <!-- Marcos y detalles -->
+        <div class="element-card group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 reveal aspect-[3/4]">
+          <img src="https://images.unsplash.com/photo-1552321554-9c6e8d71dc90?w=600&q=80" alt="Marcos de baño" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-tinta via-tinta/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+            <h3 class="font-display text-xl font-bold text-crema mb-1">Marcos y detalles</h3>
+            <p class="text-crema/75 text-xs leading-relaxed">Marcos de espejo, barras, toalleros, tapas de inodoro.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nota sobre resistencia a humedad -->
+      <div class="mt-12 bg-saman/15 border-l-4 border-caoba rounded-r-2xl p-6 lg:p-8 max-w-3xl mx-auto reveal">
+        <div class="flex items-start gap-4">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="1.5" class="flex-shrink-0 mt-1">
+            <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
+          </svg>
+          <div>
+            <h4 class="font-display text-xl font-bold text-tinta mb-2">Madera tratada para humedad</h4>
+            <p class="text-tinta/70 leading-relaxed">
+              Todas las piezas de baño se fabrican con maderas seleccionadas y sellados especiales resistentes al agua y al vapor. Para espacios muy húmedos, recomendamos caoba, cedro o roble africano — maderas que la humedad respeta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- ESTILOS DISPONIBLES                            -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-tinta text-crema relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20"
+         style="background-image: repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(201,168,76,.08) 50px, rgba(201,168,76,.08) 51px);"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-14 reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-dorado"></span>
+          <span class="text-dorado text-xs tracking-[.3em] uppercase font-semibold">Estilos</span>
+          <span class="w-10 h-px bg-dorado"></span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">¿Cuál es tu estilo?</h2>
+        <p class="text-crema/70 text-lg max-w-2xl mx-auto">Adaptamos el diseño a la estética de tu casa. Estos son los estilos que más nos piden.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
+        <div class="bg-crema/5 backdrop-blur-sm border border-crema/10 rounded-2xl p-6 hover:border-dorado/40 transition-all">
+          <div class="text-dorado font-display text-4xl font-bold mb-3">01</div>
+          <h3 class="font-display text-xl font-bold mb-2">Moderno minimalista</h3>
+          <p class="text-crema/70 text-sm leading-relaxed">Líneas rectas, sin perillas visibles, colores sobrios. La madera como protagonista silenciosa.</p>
+        </div>
+        <div class="bg-crema/5 backdrop-blur-sm border border-crema/10 rounded-2xl p-6 hover:border-dorado/40 transition-all">
+          <div class="text-dorado font-display text-4xl font-bold mb-3">02</div>
+          <h3 class="font-display text-xl font-bold mb-2">Clásico caribeño</h3>
+          <p class="text-crema/70 text-sm leading-relaxed">Madera noble con molduras, gabinetes con relieve, herrajes visibles en bronce.</p>
+        </div>
+        <div class="bg-crema/5 backdrop-blur-sm border border-crema/10 rounded-2xl p-6 hover:border-dorado/40 transition-all">
+          <div class="text-dorado font-display text-4xl font-bold mb-3">03</div>
+          <h3 class="font-display text-xl font-bold mb-2">Rústico cálido</h3>
+          <p class="text-crema/70 text-sm leading-relaxed">Vetas pronunciadas, acabados naturales, saman de una sola pieza. Como una casa de campo fina.</p>
+        </div>
+        <div class="bg-crema/5 backdrop-blur-sm border border-crema/10 rounded-2xl p-6 hover:border-dorado/40 transition-all">
+          <div class="text-dorado font-display text-4xl font-bold mb-3">04</div>
+          <h3 class="font-display text-xl font-bold mb-2">Contemporáneo mixto</h3>
+          <p class="text-crema/70 text-sm leading-relaxed">Madera combinada con mármol, metal o concreto. Para quien quiere romper reglas con gusto.</p>
+        </div>
+      </div>
+
+      <p class="text-center text-crema/60 italic text-sm mt-10 reveal">¿Tienes otro estilo en mente? También lo hacemos. Mándanos referencias.</p>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- LO QUE INCLUIMOS                              -->
+  <!-- ============================================= -->
+  <section class="py-24 lg:py-32 bg-crema">
+    <div class="max-w-6xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-14 reveal">
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="w-10 h-px bg-caoba"></span>
+          <span class="text-caoba text-xs tracking-[.3em] uppercase font-semibold">Lo que incluimos</span>
+          <span class="w-10 h-px bg-caoba"></span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-tinta">Todo, de principio a fin</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5 reveal">
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-saman/10 border border-caoba/10">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2.5" class="flex-shrink-0 mt-0.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <div>
+            <h3 class="font-semibold text-tinta mb-1">Visita técnica y medición</h3>
+            <p class="text-tinta/70 text-sm">Vamos a tu espacio para tomar medidas exactas.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-saman/10 border border-caoba/10">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2.5" class="flex-shrink-0 mt-0.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <div>
+            <h3 class="font-semibold text-tinta mb-1">Diseño en 3D</h3>
+            <p class="text-tinta/70 text-sm">Renders realistas antes de fabricar. Apruebas todo lo que verás.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-saman/10 border border-caoba/10">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2.5" class="flex-shrink-0 mt-0.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <div>
+            <h3 class="font-semibold text-tinta mb-1">Herrajes premium</h3>
+            <p class="text-tinta/70 text-sm">Bisagras de cierre suave, correderas metálicas de alta resistencia.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-saman/10 border border-caoba/10">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2.5" class="flex-shrink-0 mt-0.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <div>
+            <h3 class="font-semibold text-tinta mb-1">Tratamientos para humedad</h3>
+            <p class="text-tinta/70 text-sm">Sellados especiales en todas las piezas de baño y zonas húmedas.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-saman/10 border border-caoba/10">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2.5" class="flex-shrink-0 mt-0.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <div>
+            <h3 class="font-semibold text-tinta mb-1">Entrega e instalación</h3>
+            <p class="text-tinta/70 text-sm">Llevamos, montamos y coordinamos con plomería si es necesario.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-saman/10 border border-caoba/10">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2.5" class="flex-shrink-0 mt-0.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <div>
+            <h3 class="font-semibold text-tinta mb-1">Garantía de ajuste</h3>
+            <p class="text-tinta/70 text-sm">Si algo no queda como acordamos, lo corregimos sin costo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- CTA FINAL                                     -->
+  <!-- ============================================= -->
+  <section class="py-20 lg:py-28 bg-caoba-dark relative overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-96 h-96 bg-caoba/40 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-dorado/15 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-4xl mx-auto px-6 lg:px-10 text-center reveal">
+      <div class="divider-diamond mb-8">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="#C9A84C"><rect x="5" y="0" width="5" height="5" transform="rotate(45 5 5)"/></svg>
+      </div>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-6xl font-bold text-crema leading-tight mb-6">
+        ¿Lista tu cocina<br>
+        <span class="italic text-dorado">de los próximos 20 años?</span>
+      </h2>
+      <p class="text-crema/75 text-base sm:text-lg max-w-xl mx-auto mb-10">
+        Agendamos visita técnica sin costo. Medimos, asesoramos y te enviamos cotización en 3 a 5 días.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20cotizar%20una%20cocina%20o%20ba%C3%B1o%20a%20medida"
+           target="_blank"
+           class="btn-caoba px-6 sm:px-8 py-4 rounded-full font-semibold text-base inline-flex items-center justify-center gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar Visita
+        </a>
+        <a href="portafolio.html" class="btn-outline px-6 sm:px-8 py-4 rounded-full font-semibold text-base inline-flex items-center justify-center gap-3">
+          Ver Portafolio
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FOOTER                                        -->
+  <!-- ============================================= -->
+  <footer class="bg-caoba-dark text-crema/80 pt-20 pb-10 border-t border-crema/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+        <div>
+          <a href="index.html" class="flex items-center gap-2 mb-5">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 3 L28 10 L28 22 L16 29 L4 22 L4 10 Z" stroke="#C9A84C" stroke-width="1.5" fill="#C9A84C" fill-opacity=".15"/>
+              <path d="M16 3 L16 29 M4 10 L28 22 M28 10 L4 22" stroke="#C9A84C" stroke-width="1"/>
+            </svg>
+            <span class="font-display text-2xl font-bold text-crema">Caoba<span class="text-dorado">RD</span></span>
+          </a>
+          <p class="text-sm leading-relaxed mb-5">Muebles personalizados en madera premium. Servicio en toda la República Dominicana 🇩🇴</p>
+          <div class="flex gap-3">
+            <a href="#" aria-label="Pinterest" class="w-9 h-9 rounded-full border border-crema/20 flex items-center justify-center hover:bg-dorado hover:text-tinta hover:border-dorado transition-all">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 00-4.373 23.17c-.103-.985-.196-2.502.041-3.579.213-.973 1.379-6.197 1.379-6.197s-.352-.705-.352-1.747c0-1.638.95-2.86 2.132-2.86 1.005 0 1.491.754 1.491 1.659 0 1.01-.644 2.52-.976 3.918-.278 1.171.588 2.126 1.744 2.126 2.092 0 3.702-2.207 3.702-5.39 0-2.818-2.025-4.788-4.917-4.788-3.349 0-5.314 2.511-5.314 5.106 0 1.012.39 2.095.877 2.685.097.117.11.22.082.339l-.329 1.342c-.053.218-.172.265-.397.16-1.48-.69-2.405-2.854-2.405-4.593 0-3.74 2.717-7.177 7.83-7.177 4.111 0 7.306 2.929 7.306 6.844 0 4.084-2.575 7.37-6.15 7.37-1.2 0-2.328-.624-2.714-1.361l-.738 2.813c-.267 1.028-.987 2.316-1.47 3.103A12 12 0 1012 0z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full border border-crema/20 flex items-center justify-center hover:bg-dorado hover:text-tinta hover:border-dorado transition-all">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok" class="w-9 h-9 rounded-full border border-crema/20 flex items-center justify-center hover:bg-dorado hover:text-tinta hover:border-dorado transition-all">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005.8 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.84-.1z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-display text-lg font-bold text-dorado mb-5">Servicios</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="muebles.html" class="hover:text-dorado transition-colors">Muebles a Medida</a></li>
+            <li><a href="cocinas-banos.html" class="hover:text-dorado transition-colors">Cocinas y Baños</a></li>
+            <li><a href="puertas-armarios.html" class="hover:text-dorado transition-colors">Puertas y Armarios</a></li>
+            <li><a href="maderas.html" class="hover:text-dorado transition-colors">Tipos de Madera</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display text-lg font-bold text-dorado mb-5">Empresa</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="portafolio.html" class="hover:text-dorado transition-colors">Portafolio</a></li>
+            <li><a href="inspiracion.html" class="hover:text-dorado transition-colors">Inspiración</a></li>
+            <li><a href="contacto.html" class="hover:text-dorado transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display text-lg font-bold text-dorado mb-5">Contáctanos</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>República Dominicana 🇩🇴<br><span class="text-dorado/80 text-xs">Servicio en todo el país</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              +1 (809) 123-4567
+            </li>
+            <li class="flex items-start gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              info@caobard.com
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-crema/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-crema/50">
+        <p>© 2026 CaobaRD. Todos los derechos reservados.</p>
+        <p>Hecho con <span class="text-dorado">♦</span> en República Dominicana 🇩🇴</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/18091234567?text=Hola%20CaobaRD%2C%20quiero%20cotizar%20una%20cocina%20o%20ba%C3%B1o"
+     target="_blank"
+     aria-label="Contactar por WhatsApp"
+     class="wa-float fixed bottom-6 right-6 z-[9999] w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe5a] text-white flex items-center justify-center shadow-2xl transition-all hover:scale-110">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script>
+    const menuToggle  = document.getElementById('menuToggle');
+    const menuClose   = document.getElementById('menuClose');
+    const mobileMenu  = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      menuOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      menuOverlay.classList.add('opacity-100');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      menuOverlay.classList.add('opacity-0', 'pointer-events-none');
+      menuOverlay.classList.remove('opacity-100');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle .addEventListener('click', openMenu);
+    menuClose  .addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+    mobileMenu.querySelectorAll('a').forEach(link =>
+      link.addEventListener('click', closeMenu)
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+  <!--
+  =========================================================
+  📝 CÓMO PERSONALIZAR cocinas-banos.html
+  =========================================================
+
+  1️⃣ IMÁGENES (Unsplash placeholders)
+     - 11 imágenes en total: 1 hero + 6 cocinas + 4 baños
+     - Reemplaza URLs de unsplash.com con fotos propias (postimg.cc)
+
+  2️⃣ NÚMERO WHATSAPP: busca 18091234567, reemplaza
+
+  3️⃣ GOOGLE ANALYTICS: busca G-XXXXXXXXXX, reemplaza
+
+  4️⃣ STATS en "El corazón de la casa"
+     - Los 4 números (20+, 100%, 6+, 4-6) son estimaciones
+     - Ajusta si quieres decir algo distinto
+
+  5️⃣ ESTILOS disponibles
+     - 4 estilos listados: minimalista, clásico caribeño, rústico, contemporáneo
+     - Puedes agregar o cambiar los nombres según lo que más pidan tus clientes
+
+  ✅ LISTO PARA PRODUCCIÓN desde el día 1
+  =========================================================
+  -->
+
+</body>
+</html>
